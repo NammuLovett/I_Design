@@ -28,7 +28,7 @@
     <title>My first webpage</title>
   </head>
   <body>
-    <!-- etiquetas en bloque -->
+    <!-- etiquetas en bloque #–-->
     <div></div>
     <header></header>
     <nav></nav>
@@ -38,9 +38,34 @@
     <aside></aside>
     <main></main>
 
+    <!-- etiquetas de línea # # #-->
+
+    <a href=""></a>
+    <abbr title=""></abbr>
+    <span></span>
     <script></script>
-    <!-- se debe poner al final para que se procese la página antes de que se ejecute el script-->
-  </body>
+    <del></del>
+    <button></button>
+    <img src="" alt="" />
+
+    <!-- id / class -->
+    <!--
+
+    - id -> Identificador único, se recomienda que no se use para css, se recomienda su uso en JS pero hay 2 escuelas de pensamiento ID/CLASS. No se pueden sumar IDs.
+    id Selector -> # ej #p1
+    - class ->  Se recomienda su uso para definir en CSS las clases, se pueden ir sumando clases <p class="p2 p3 p4">
+    class selector -> . ej .p2
+
+   !important : Se salta la jerarquía de css.
+  -->
+
+    <!-- TEXTO
+  <h1><h6>
+  <p>
+  <pre>
+
+  -->
+
 </html>
 
 ```
