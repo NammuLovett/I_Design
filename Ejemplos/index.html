@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Diseño de interfaz</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -16,6 +16,7 @@
       exercitationem eos odio tempora enim officia voluptatum vel quam.
       Incidunt, odit?
     </p>
+    <hr />
     <pre>
       This is a sample text 
         it will be 
@@ -25,12 +26,13 @@
     <p class="parrafo2">
       Lorem ipsum oye!! sit amet consectetur adipisicing elit. Quisquam
     </p>
+    <hr />
     <span
-      >&lt;wbr&gt; es para separar palabras y con &shy mete guioncitos<wbr />
+      >&lt;wbr&gt; es para separar palabras y con & shy mete guioncitos<wbr />
       cupidi<wbr />tate&shy;laudan&shy;tium&shy;cup<wbr />idita&shy;telaudan&shy;tium
       <wbr />
     </span>
-
+    <hr />
     <p>Negrita es con la etiqueta <strong>&lt;strong&gt;</strong></p>
     <p>Cursiva es con la etiqueta <em>&lt;em&gt;</em></p>
     <p>Texto resaltado <mark>&lt;mark&gt;</mark></p>
@@ -40,6 +42,7 @@
         >&lt;abbr&gt; en el title ponemos lo que queramos</abbr
       >
     </p>
+    <hr />
     <p>
       Descargar archivo&lt;a href="ruta" download=""&gt;
       <a href="/README.md" download="" target="_blank">download </a>
@@ -48,13 +51,98 @@
       (evitar movidas maliciosas)
     </p>
 
+    <hr />
+
     <p>Listas No numeradas &lt;ul&gt; etiqueta padre &lt;li&gt; - dentro</p>
+    <p>Listas Numeradas &lt;ol&gt; etiqueta padre &lt;li&gt; - dentro.</p>
     <p>
-      Listas Numeradas &lt;ol&gt; etiqueta padre &lt;li&gt; - dentro. Si dentro
-      del &lt;ol&gt; type:"a" empieza en la lista ordenada en la a, b, c... Si
-      ponemos type:"A" A, B, C... type:"i" i,ii,iii, type:"I" I,II,III... Si no
-      pones nada se considera como número. el atributo <em>reverse</em> hace la
-      lista al revés.
+      Dentro del &lt;ol&gt; type:"a" empieza en la lista ordenada en la a, b,
+      c... Si ponemos type:"A" A, B, C... type:"i" i,ii,iii, type:"I"
+      I,II,III... Si no pones nada se considera como número. el atributo
+      <em>reverse</em> hace la lista al revés.
     </p>
+    <hr />
+
+    <ul>
+      <li>item 1</li>
+      <li>item 2</li>
+      <li>item 3</li>
+    </ul>
+
+    <ol type="I" reversed>
+      <li>item 1</li>
+      <li>item 2</li>
+      <li>item 3</li>
+    </ol>
+    <hr />
+    <p>&lt;dt&gt; DATA TERM</p>
+    <p>&lt;dd&gt; DATA DEFINITION</p>
+    <dt>Termino 1</dt>
+    <dd>Aquí va la definición del termino 1</dd>
+
+    <hr />
+
+    <details>
+      <summary>&lt;summary&gt; Lo que queremos que se muestre</summary>
+      Hola que ase &lt;details&gt;
+    </details>
+
+    <hr />
+    <blockquote>
+      &lt;blockquote&gt; El mal es una enfermedad presente a lo largo de la
+      historia. Desgraciadamente el ser humano no tiene la capacidad de expresar
+      su bondad
+    </blockquote>
+
+    <hr />
+
+    <h2>Imágenes</h2>
+    <p>Propiedad inline</p>
+    &lt;img&gt;
+    <p>Propiedad bloque</p>
+    &lt;picture&gt; &lt;figure&gt;
+
+    <br />
+    <map
+      name="mimapa"
+      shape="rect"
+      coords="535,484,633,577"
+      alt="cojín"
+      href="www.wikipedia.com"
+    ></map>
+    <map
+      name="mimapa"
+      shape="circle"
+      coords="666,162,100"
+      alt="lampara"
+      href="www.wikipedia.com"
+    ></map>
+    <map
+      name="mimapa"
+      shape="poly"
+      coords="1041,490,934,394,1039,288,1128,417"
+      alt="arbol"
+      href="www.wikipedia.com"
+    ></map>
+    <img src="casa.png" alt="casa decoración" usemap="#mimapa" />
+    <hr />
+    <p>Para hacer imágenes responsive se utiliza la etiqueta &lt;picture&gt;</p>
+    <!-- Para hacer responsive en imágenes -->
+    <picture>
+      <source media="(min-width:1200px)" srcset="./earth.jpg" />
+      <source media="(min-width:800px)" srcset="./earth300.png" />
+      <source srcset="./earth300.png" />
+      <img src="" alt="tierra" />
+    </picture>
+
+    <hr />
+    <br />
+
+    &lt;figure&gt; &lt;figcaption&gt;
+
+    <figure>
+      <img src="./earth300.png" alt="" />
+      <figcaption>ficaption Leyenda de la imagen</figcaption>
+    </figure>
   </body>
 </html>
