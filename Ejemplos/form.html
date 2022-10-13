@@ -95,11 +95,53 @@
           <input type="checkbox" name="o4" value="d">
 
         </p>
+
+        
+      </fieldset>
+
+      <fieldset>
+        <legend>Un par de lista</legend>
+        <p>
+          <label for="lista1">Asignatura Favorita:</label>
+          <select name="lista1" id="lista1">
+          <option value="l1">Diseño Web</option>
+          <option value="l2" selected>Sistemas informáticos</option>
+          <option value="l3">Empresa</option>
+          <option value="l4">Entorno</option>
+          </select>
+        </p>
+  
+        <p>
+          <label for="lista2">Mes favorito</label>
+          <select name="lista2" id="lista2">
+          <optgroup label="primavera">
+            <option value="p1">Marzo</option>
+            <option value="p2">Abril</option>
+            <option value="p3">Mayo</option>
+          </optgroup>
+          <optgroup label="Verano">
+            <option value="v1">Junio</option>
+            <option value="v2">Julio</option>
+            <option value="v3">Agosto</option>
+          </optgroup>
+          <optgroup label="Otoño">
+            <option value="o1">Septiembre</option>
+            <option value="o2">Octubre</option>
+            <option value="o3">Noviembre</option>
+          </optgroup>
+          <optgroup label="Invierno">
+            <option value="i1">Diciembre</option>
+            <option value="i2">Enero</option>
+            <option value="i3">Febrero</option>
+          </optgroup>
+        </select>
+        </p>
       </fieldset>
       <p>
         <input type="reset" value="limpiar" />
         <input type="submit" value="enviar" />
       </p>
     </form>
+    
   </body>
 </html>
