@@ -103,9 +103,10 @@
         <legend>Un par de lista</legend>
         <p>
           <label for="lista1">Asignatura Favorita:</label>
-          <select name="lista1" id="lista1">
+          <select name="lista1" id="lista1" required>
+            <option value="" selected disabled hidden>Seleccione una opción</option>
           <option value="l1">Diseño Web</option>
-          <option value="l2" selected>Sistemas informáticos</option>
+          <option value="l2">Sistemas informáticos</option>
           <option value="l3">Empresa</option>
           <option value="l4">Entorno</option>
           </select>
@@ -113,9 +114,11 @@
   
         <p>
           <label for="lista2">Mes favorito</label>
+          
           <select name="lista2" id="lista2">
+            <option value="" selected disabled hidden>Seleccione una opción</option>
           <optgroup label="primavera">
-            <option value="p1">Marzo</option>
+            <option value="p1" >Marzo</option>
             <option value="p2">Abril</option>
             <option value="p3">Mayo</option>
           </optgroup>
