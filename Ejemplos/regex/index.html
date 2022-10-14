@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form name="expresiones" id="expresiones" action="file.php" method="get">
+      <fieldset>
+        <legend>Introduce la expresión regular</legend>
+        <p>
+          <label for="exp1">Código postal</label>
+          <input
+            type="text"
+            name="exp1"
+            id="exp1"
+            size="6"
+            maxlength="6"
+            required
+            pattern="([0-4][0-9])|(5[0-2]))[0-9]{3}"
+          />
+        </p>
+        <p>
+          <label for="exp1">DNI</label>
+          <input
+            type="text"
+            name="exp2"
+            id="exp2"
+            size="12"
+            maxlength="12"
+            required
+            pattern="[0-9]{8}(-|\s)?[a-zA-Z]"
+          />
+        </p>
+        <p>
+          <label for="exp3">4 números entre 0 y 255 separados por .</label>
+          <input
+            type="text"
+            name="exp2"
+            id="exp2"
+            size="15"
+            maxlength="15"
+            required
+            pattern="((([01][0-9]{2})|(2([0-4][0-9])|25[0-5]))\.{3}((([01][0-9]{2})|(2([0-4][0-9])|25[0-5])))"
+          />
+        </p>
+      </fieldset>
+      <p>
+        <input
+          type="submit"
+          name="enviar"
+          id="enviar"
+          value="Enviar formulario"
+        />
+      </p>
+    </form>
+  </body>
+</html>
