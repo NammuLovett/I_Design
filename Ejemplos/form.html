@@ -162,28 +162,7 @@
 
 
       </fieldset>
-    <fieldset>
-      <legend>
-        Expresiones regulinchis
-      </legend>
-      <p>
-      <label for="exp4">contraseña1</label>
-    
-      <input type="text" name="exp4" id="exp4" size="30" maxlength="10" placeholder="Mayúscula, minúscula y número" required pattern="(?=.*[A-Z])(?=.*[a-z])(?=.*[1-9])(.{6,})">
-    </p><p>
-      <label for="exp5">contraseña2</label>
-      <input type="text" name="exp5" id="exp5" size="30" maxlength="10" placeholder="Mayúscula, minúscula y número" required pattern="(?=[A-Z])(?=.*[A-Z]{2}[a-z])(?=.*[a-z]$)([a-zA-Z].{6,10})">
-    </p><p>
-      <label for="exp6">contraseña3</label>
-      <input type="text" name="exp6" id="exp6" size="30" maxlength="10" placeholder="6 digitos, no comenzar 0, no se repita mismo dígito en posiciones consecutivas"  required pattern="(?!0.+)(?!.*(00|11|22|33|44|55|66|77|88|99))(\d{6})">
-    </p><p>
-      <label for="exp7">contraseña4</label>
-      <input type="text" name="exp7" id="exp7" size="30" maxlength="10" placeholder="6 digitos, no comenzar 0, no se repita mismo dígito en posiciones consecutivas" oninvalid="setCustomValidity('Tamaño máximo 6 dígitos, no puede comenzar por 0, no se puede repetir dígito seguido.')"oninput="setCustomValidity('')" required pattern="(?!0.+)(?!.*(00|11|22|33|44|55|66|77|88|99))(\d{6})" required>
-    </p><p>
-      <label for="exp7">contraseña5</label>
-      <input type="text" name="exp8" id="exp8" size="30" maxlength="10" placeholder="6 digitos, no comenzar 0, no se repita mismo dígito en posiciones consecutivas" oninvalid="setCustomValidity('6 caracteres, 2 dígitos consecutivas, ningún caracter alfanumérico excepto @, no puede aparecer una minúscula inmediatamente después de un dígito')"oninput="setCustomValidity('')" required pattern="(?=.*\d\d)(?!.*\d[a-z])(?!.*[^\w]^@)(.{6})" required>
-    </p>
-    </fieldset>
+   
 
     <p>
       <input type="reset" value="limpiar" />
