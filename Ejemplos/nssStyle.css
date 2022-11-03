@@ -1,0 +1,457 @@
+/* -- atomo.css style -- */
+
+/* -- VARIABLES -- */
+:root {
+  --font: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Ubuntu,
+    sans-serif;
+
+  --font-size: 16px;
+  --font-height-multiplier: 1.5;
+  --font-title-multiplier: 1.25;
+
+  --space-multiplier: 2;
+
+  --space: calc(var(--font-size) * var(--font-height-multiplier));
+
+  --space-2xs: calc(var(--space) / calc(var(--space-multiplier) * 3));
+  --space-xs: calc(var(--space) / calc(var(--space-multiplier) * 2));
+  --space-s: calc(var(--space) / var(--space-multiplier));
+  --space-l: calc(var(--space) * var(--space-multiplier));
+  --space-xl: calc(var(--space) * calc(var(--space-multiplier) * 2));
+  --space-2xl: calc(var(--space) * calc(var(--space-multiplier) * 3));
+  --space-3xl: calc(var(--space) * calc(var(--space-multiplier) * 4));
+  --space-4xl: calc(var(--space) * calc(var(--space-multiplier) * 5));
+
+  --font-size-s: calc(var(--font-size) / 1.25);
+  --line-height-s: calc(var(--font-size-s) * var(--font-title-multiplier));
+
+  --font-size-l: calc(var(--font-size) * 1.25);
+  --line-height-l: calc(var(--font-size-l) * var(--font-title-multiplier));
+
+  --font-size-xl: calc(var(--font-size) * 1.5);
+  --line-height-xl: calc(var(--font-size-xl) * var(--font-title-multiplier));
+
+  --font-size-2xl: calc(var(--font-size) * 1.75);
+  --line-height-2xl: calc(var(--font-size-2xl) * var(--font-title-multiplier));
+
+  --font-size-3xl: calc(var(--font-size) * 2);
+  --line-height-3xl: calc(var(--font-size-3xl) * var(--font-title-multiplier));
+
+  --font-size-4xl: calc(var(--font-size) * 2.25);
+  --line-height-4xl: calc(var(--font-size-4xl) * var(--font-title-multiplier));
+
+  --color-l-multiplier: 10%;
+
+  --color-grey-hue: 218;
+  --color-grey-saturation: 9%;
+  --color-grey-light: 67%;
+
+  --color-grey: hsl(
+    var(--color-grey-hue),
+    var(--color-grey-saturation),
+    var(--color-grey-light)
+  );
+
+  --color-grey-l1: hsl(
+    var(--color-grey-hue),
+    var(--color-grey-saturation),
+    calc(var(--color-grey-light) + var(--color-l-multiplier))
+  );
+  --color-grey-l2: hsl(
+    var(--color-grey-hue),
+    var(--color-grey-saturation),
+    calc(var(--color-grey-light) + var(--color-l-multiplier) * 2)
+  );
+  --color-grey-l3: hsl(
+    var(--color-grey-hue),
+    var(--color-grey-saturation),
+    calc(var(--color-grey-light) + var(--color-l-multiplier) * 3)
+  );
+
+  --color-grey-d1: hsl(
+    var(--color-grey-hue),
+    var(--color-grey-saturation),
+    calc(var(--color-grey-light) - var(--color-l-multiplier))
+  );
+  --color-grey-d2: hsl(
+    var(--color-grey-hue),
+    var(--color-grey-saturation),
+    calc(var(--color-grey-light) - var(--color-l-multiplier) * 2)
+  );
+  --color-grey-d3: hsl(
+    var(--color-grey-hue),
+    var(--color-grey-saturation),
+    calc(var(--color-grey-light) - var(--color-l-multiplier) * 3)
+  );
+}
+
+/* -- CLASSES -- */
+/* -- Typography -- */
+
+.font-size-s,
+small {
+  font-size: var(--font-size-s);
+  line-height: var(--line-height-s);
+}
+.font-size-l,
+h5 {
+  font-size: var(--font-size-l);
+  line-height: var(--line-height-l);
+}
+.font-size-xl,
+h4 {
+  font-size: var(--font-size-xl);
+  line-height: var(--line-height-xl);
+}
+.font-size-2xl,
+h3 {
+  font-size: var(--font-size-2xl);
+  line-height: var(--line-height-2xl);
+}
+.font-size-3xl,
+h2 {
+  font-size: var(--font-size-3xl);
+  line-height: var(--line-height-3xl);
+}
+.font-size-4xl,
+h1 {
+  font-size: var(--font-size-4xl);
+  line-height: var(--line-height-4xl);
+}
+
+.bold {
+  font-weight: bold;
+}
+.italic {
+  font-style: italic;
+}
+
+/* -- Margins -- */
+
+.m-2xs {
+  margin: var(--space-2xs);
+}
+.m-xs {
+  margin: var(--space-xs);
+}
+.m-s {
+  margin: var(--space-s);
+}
+.m {
+  margin: var(--space);
+}
+.m-l {
+  margin: var(--space-l);
+}
+.m-xl {
+  margin: var(--space-xl);
+}
+.m-2xl {
+  margin: var(--space-2xl);
+}
+.m-3xl {
+  margin: var(--space-3xl);
+}
+.m-4xl {
+  margin: var(--space-4xl);
+}
+
+.mt-2xs {
+  margin-top: var(--space-2xs);
+}
+.mt-xs {
+  margin-top: var(--space-xs);
+}
+.mt-s {
+  margin-top: var(--space-s);
+}
+.mt {
+  margin-top: var(--space);
+}
+.mt-l {
+  margin-top: var(--space-l);
+}
+.mt-xl {
+  margin-top: var(--space-xl);
+}
+.mt-2xl {
+  margin-top: var(--space-2xl);
+}
+.mt-3xl {
+  margin-top: var(--space-3xl);
+}
+.mt-4xl {
+  margin-top: var(--space-4xl);
+}
+
+.mb-2xs {
+  margin-bottom: var(--space-2xs);
+}
+.mb-xs {
+  margin-bottom: var(--space-xs);
+}
+.mb-s {
+  margin-bottom: var(--space-s);
+}
+.mb {
+  margin-bottom: var(--space);
+}
+.mb-l {
+  margin-bottom: var(--space-l);
+}
+.mb-xl {
+  margin-bottom: var(--space-xl);
+}
+.mb-2xl {
+  margin-bottom: var(--space-2xl);
+}
+.mb-3xl {
+  margin-bottom: var(--space-3xl);
+}
+.mb-4xl {
+  margin-bottom: var(--space-4xl);
+}
+
+.ml-2xs {
+  margin-left: var(--space-2xs);
+}
+.ml-xs {
+  margin-left: var(--space-xs);
+}
+.ml-s {
+  margin-left: var(--space-s);
+}
+.ml {
+  margin-left: var(--space);
+}
+.ml-l {
+  margin-left: var(--space-l);
+}
+.ml-xl {
+  margin-left: var(--space-xl);
+}
+.ml-2xl {
+  margin-left: var(--space-2xl);
+}
+.ml-3xl {
+  margin-left: var(--space-3xl);
+}
+.ml-4xl {
+  margin-left: var(--space-4xl);
+}
+
+.mr-2xs {
+  margin-right: var(--space-2xs);
+}
+.mr-xs {
+  margin-right: var(--space-xs);
+}
+.mr-s {
+  margin-right: var(--space-s);
+}
+.mr {
+  margin-right: var(--space);
+}
+.mr-l {
+  margin-right: var(--space-l);
+}
+.mr-xl {
+  margin-right: var(--space-xl);
+}
+.mr-2xl {
+  margin-right: var(--space-2xl);
+}
+.mr-3xl {
+  margin-right: var(--space-3xl);
+}
+.mr-4xl {
+  margin-right: var(--space-4xl);
+}
+
+/* -- Paddings -- */
+
+.p-2xs {
+  padding: var(--space-2xs);
+}
+.p-xs {
+  padding: var(--space-xs);
+}
+.p-s {
+  padding: var(--space-s);
+}
+.p {
+  padding: var(--space);
+}
+.p-l {
+  padding: var(--space-l);
+}
+.p-xl {
+  padding: var(--space-xl);
+}
+.p-2xl {
+  padding: var(--space-2xl);
+}
+.p-3xl {
+  padding: var(--space-3xl);
+}
+.p-4xl {
+  padding: var(--space-4xl);
+}
+
+.pt-2xs {
+  padding-top: var(--space-2xs);
+}
+.pt-xs {
+  padding-top: var(--space-xs);
+}
+.pt-s {
+  padding-top: var(--space-s);
+}
+.pt {
+  padding-top: var(--space);
+}
+.pt-l {
+  padding-top: var(--space-l);
+}
+.pt-xl {
+  padding-top: var(--space-xl);
+}
+.pt-2xl {
+  padding-top: var(--space-2xl);
+}
+.pt-3xl {
+  padding-top: var(--space-3xl);
+}
+.pt-4xl {
+  padding-top: var(--space-4xl);
+}
+
+.pb-2xs {
+  padding-bottom: var(--space-2xs);
+}
+.pb-xs {
+  padding-bottom: var(--space-xs);
+}
+.pb-s {
+  padding-bottom: var(--space-s);
+}
+.pb {
+  padding-bottom: var(--space);
+}
+.pb-l {
+  padding-bottom: var(--space-l);
+}
+.pb-xl {
+  padding-bottom: var(--space-xl);
+}
+.pb-2xl {
+  padding-bottom: var(--space-2xl);
+}
+.pb-3xl {
+  padding-bottom: var(--space-3xl);
+}
+.pb-4xl {
+  padding-bottom: var(--space-4xl);
+}
+
+.pl-2xs {
+  padding-left: var(--space-2xs);
+}
+.pl-xs {
+  padding-left: var(--space-xs);
+}
+.pl-s {
+  padding-left: var(--space-s);
+}
+.pl {
+  padding-left: var(--space);
+}
+.pl-l {
+  padding-left: var(--space-l);
+}
+.pl-xl {
+  padding-left: var(--space-xl);
+}
+.pl-2xl {
+  padding-left: var(--space-2xl);
+}
+.pl-3xl {
+  padding-left: var(--space-3xl);
+}
+.pl-4xl {
+  padding-left: var(--space-4xl);
+}
+
+.pr-2xs {
+  padding-right: var(--space-2xs);
+}
+.pr-xs {
+  padding-right: var(--space-xs);
+}
+.pr-s {
+  padding-right: var(--space-s);
+}
+.pr {
+  padding-right: var(--space);
+}
+.pr-l {
+  padding-right: var(--space-l);
+}
+.pr-xl {
+  padding-right: var(--space-xl);
+}
+.pr-2xl {
+  padding-right: var(--space-2xl);
+}
+.pr-3xl {
+  padding-right: var(--space-3xl);
+}
+.pr-4xl {
+  padding-right: var(--space-4xl);
+}
+
+/* -- Color -- */
+
+.color-grey-l1 {
+  color: var(--color-grey-l1);
+}
+.color-grey-l2 {
+  color: var(--color-grey-l2);
+}
+.color-grey-l3 {
+  color: var(--color-grey-l3);
+}
+.color-grey {
+  color: var(--color-grey);
+}
+.color-grey-d1 {
+  color: var(--color-grey-d1);
+}
+.color-grey-d2 {
+  color: var(--color-grey-d2);
+}
+.color-grey-d3 {
+  color: var(--color-grey-d3);
+}
+
+.bg-color-grey-l1 {
+  background: var(--color-grey-l1);
+}
+.bg-color-grey-l2 {
+  background: var(--color-grey-l2);
+}
+.bg-color-grey-l3 {
+  background: var(--color-grey-l3);
+}
+.bg-color-grey {
+  background: var(--color-grey);
+}
+.bg-color-grey-d1 {
+  background: var(--color-grey-d1);
+}
+.bg-color-grey-d2 {
+  background: var(--color-grey-d2);
+}
+.bg-color-grey-d3 {
+  background: var(--color-grey-d3);
+}
