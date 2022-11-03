@@ -9,6 +9,30 @@
 </head>
 
 <body>
+
+    <?php
+    if (!isset($_GET["nombre"]) && !isset($_GET["apellido1"])) {
+    ?>
+        <form action="ej1.php" method="GET">
+            <p><label for="nombre">Nombre: </label>
+                <input type="text" name="nombre" id="nombre">
+            </p>
+            <p><label for="apellido1">Primer apellido:</label>
+                <input type="text" name="apellido1" id="apellido1">
+            </p>
+            <p><input type="submit" value="enviar"></p>
+        </form>
+
+    <?php
+    } else {
+        $nombre = $_GET["nombre"];
+        $apellido1 = $_GET["apellido1"];
+
+        echo "Hola $nombre $apellido1";
+    }
+    ?>
+
+    <!-- 
     <form name="formulario" action="#" method="get">
         <fieldset>
             <legend>Datos Personales</legend>
@@ -152,7 +176,9 @@
             <input type="reset" value="limpiar" />
             <input type="submit" value="enviar" />
         </p>
-    </form>
+    </form> -->
+
+
 </body>
 
 </html>
