@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Puertas Del Campo</title>
+    <link rel="stylesheet" href="/lmpdc/style/style.css" />
+    <script src="https://use.fontawesome.com/de21a8ef43.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css"
+      integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7"
+      crossorigin="anonymous"
+    />
+  </head>
+
+  <body>
+    <section class="sub-header">
+      <nav>
+        <a href="index.html"> <img src="/lmpdc/img/logo.png" /></a>
+        <div class="nav-links" id="navLinks">
+          <i class="fa fa-times" onclick="hideMenu()"></i>
+          <ul>
+            <li><a href="/lmpdc/html/index.html">HOME</a></li>
+          <li><a href="/lmpdc/html/nosotros.html">NOSOTROS</a></li>
+            <li><a href="/lmpdc/html/info.html">INFO</a></li>
+            <li><a href="/lmpdc/html/blog.html">BLOG</a></li>
+            <li><a href="/lmpdc/html/contacto.html">CONTACTO</a></li>
+          </ul>
+        </div>
+
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+      </nav>
+      <h1>CONTACTO</h1>
+    </section>
+    <!---------contenido--------------->
+    <section class="nosotros">
+      <div class="row">
+        <div class="nosotros-col">
+          <h1>Mapa del Puertas del Campo</h1>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda maxime exercitationem ab possimus consectetur ea nisi animi, officia laudantium tenetur perferendis eos inventore nemo expedita. Libero expedita amet voluptate laudantium.  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt consequuntur magni doloremque possimus corrupti, itaque dolorum error autem, tenetur aliquid quisquam? Magni natus ipsa, cupiditate iure quidem architecto rem aperiam?</p>
+          <a href="/lmpdc   /html/webdos/html/contacto.html" class="visita-btn red-btn"> VISITAR AHORA</a>
+        </div>
+        
+          <div class="nosotros-col">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3232.372199142401!2d-5.322282884373141!3d35.888898926161396!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd0ca3fcd3786d7d%3A0x151bb57eae323ea1!2sIES%20Puertas%20del%20Campo!5e0!3m2!1ses!2ses!4v1637783385976!5m2!1ses!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>      </div>
+    </section>
+
+
+    <section class="form-register">
+      <h4>Formulario Registro</h4>
+      <input class="controls" type="text" name="nombres" id="nombres" placeholder="Ingrese su Nombre">
+      <input class="controls" type="text" name="apellidos" id="apellidos" placeholder="Ingrese su Apellido">
+      <input class="controls" type="email" name="correo" id="correo" placeholder="Ingrese su Correo">
+      <input class="controls" type="password" name="correo" id="correo" placeholder="Ingrese su Contraseña">
+      <p> <a href="#">Terminos y Condiciones</a></p>
+      <input class="botons" type="submit" value="Registrar">
+      <p><a href="#">¿Ya tengo Cuenta?</a></p>
+    </section>
+
+    <!---------footer--------------->
+    <section class="footer">
+      <h4>Sobre nosotros</h4>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit dignissimos
+        exercitationem fugit voluptatem deleniti similique pariatur fugiat
+        dicta, ipsum, <br />, consectetur quis maxime soluta quia numquam enim
+        facilis aut ducimus.
+      </p>
+      <div class="icons">
+        <i class="fa fa-facebook"></i>
+        <i class="fa fa-twitter"></i>
+        <i class="fa fa-instagram"></i>
+        <i class="fa fa-linkedin"></i>
+      </div>
+      <p>Hecho con mucho <i class="fa fa-heart-o"> </i> por ManuelGLora</p>
+    </section>
+
+    <!---------pequeña animación del menú tamaño móvil--->
+    <script>
+      var navLinks = document.getElementById("navLinks");
+      function showMenu() {
+        navLinks.style.right = "0";
+      }
+      function hideMenu() {
+        navLinks.style.right = "-200px";
+      }
+    </script>
+  </body>
+</html>
