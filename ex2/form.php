@@ -11,24 +11,57 @@
 <body>
 
     <?php
-    if (!isset($_GET["nombre"]) && !isset($_GET["apellido1"])) {
+    if (!isset($_GET["name"])) {
     ?>
-        <form action="ej1.php" method="GET">
-            <p><label for="nombre">Nombre: </label>
-                <input type="text" name="nombre" id="nombre">
+        <form action="#" method="GET">
+            <fieldset>
+                <legend>Datos Personales</legend>
+                <p><label for="name">Nombre: </label>
+                    <input type="text" name="name" id="name">
+                </p>
+                <p><label for="surname">Primer apellido:</label>
+                    <input type="text" name="surname" id="surname">
+                </p>
+                <p><label for="surname2">Segundo apellido:</label>
+                    <input type="text" name="surname2" id="surname2">
+                </p>
+                <p><label for="adress">Dirección:</label>
+                    <input type="text" name="adress" id="adress">
+                </p>
+                <p><label for="email">Email</label>
+                    <input type="email" name="email" id="email">
+                </p>
+                <p><label for="date">fecha de nacimiento</label>
+                    <input type="date" name="date" id="date">
+                </p>
+            </fieldset>
+            <fieldset>
+                <legend>Otros datos</legend>
+            </fieldset>
+            <p>
+                <label for="tlf"> Teléfono</label>
+                <input type="text" name="tlf" id="tlf" />
             </p>
-            <p><label for="apellido1">Primer apellido:</label>
-                <input type="text" name="apellido1" id="apellido1">
+            <p>
+                <label for="color"> Color Favorito</label>
+                <input type="color" name="color" id="color" value="#CB1363" />
+            </p>
+            <p>
+                <label for="web"> Página inicio</label>
+                <input type="web" name="web" id="web" />
             </p>
             <p><input type="submit" value="enviar"></p>
         </form>
 
     <?php
     } else {
-        $nombre = $_GET["nombre"];
-        $apellido1 = $_GET["apellido1"];
+        $name = $_GET["name"];
+        $surname = $_GET["surname"];
+        $surname2 = $_GET["surname2"];
+        $adress = $_GET["adress"];
+        $email = $_GET["email"];
 
-        echo "Hola $nombre $apellido1";
+        echo "Bienvenido a la mazmorra $name $surname $surname2, vives en la calle $adress y tu email es $email con fecha de nacimiento $date";
     }
     ?>
 
