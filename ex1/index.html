@@ -23,13 +23,13 @@
   </head>
   <body>
     <section>
-      <ul>
-        <li><a href="#">HOME</a></li>
-        <li><a href="./html/tournaments.html">TOURNAMENTS</a></li>
-        <li><a href="./html/events.html">EVENTS</a></li>
-        <li><a href="./html/media.html">MEDIA</a></li>
-        <li><a href="./html/aboutus.html">ABOUT US</a></li>
-      </ul>
+      <nav>
+        <a href="#">HOME</a> |
+        <a href="./html/tournaments.html">TOURNAMENTS</a> |
+        <a href="./html/events.html">EVENTS</a> |
+        <a href="./html/media.html">MEDIA</a> |
+        <a href="./html/aboutus.html">ABOUT US</a>
+      </nav>
     </section>
     <section>
       <h1>WELCOME TO THE MAIN PAGE</h1>
@@ -41,5 +41,65 @@
         <img src="" alt="dungeons and dragons" />
       </picture>
     </section>
+
+    <!-- etiquetas en bloque #–-->
+    <div>DIV</div>
+    <header>header</header>
+    <nav>nav</nav>
+
+    <section>
+      <!-- etiquetas de línea # # #-->
+
+      <span id="demo"></span>
+      <script>
+        document.getElementById('demo').innerHTML = 'Hello Script!';
+      </script>
+    </section>
+    <aside>
+      <p>
+        The Epcot center is a theme park at Walt Disney World Resort featuring
+        exciting attractions, international pavilions, award-winning fireworks
+        and seasonal special events.
+      </p>
+    </aside>
+    <main>
+      <h1>
+        Most <del>un</del>Popular Dragons in
+        <abbr title="Dungeons and Dragons">D&D</abbr> Universe
+      </h1>
+      <p>Chromo, Firefenix, and Edgeon are the most used popular today.</p>
+
+      <article>
+        <h2>Chromo</h2>
+        <p>
+          Chromo is a Dragon of light, released in 2008. Chromo is the world's
+          most popular dragon today!
+        </p>
+      </article>
+
+      <article>
+        <h2>Firefenix</h2>
+        <p>
+          Firefenix is an fire dragon similar like godzilla. Firefenix has been
+          the second most popular Dragon.
+        </p>
+      </article>
+
+      <article>
+        <h2>Edgeon</h2>
+        <p>
+          Edgeon is an unknown dragon, released in 1999. Edgeon replaced the
+          original Dragon.
+        </p>
+        <p><button>read more</button></p>
+      </article>
+    </main>
+
+    <footer>
+      <p>
+        Author: Nammu Lovett<br />
+        <a href="mailto:Nammulovett@example.com">NammuLovett@example.com</a>
+      </p>
+    </footer>
   </body>
 </html>

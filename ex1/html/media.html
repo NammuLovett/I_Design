@@ -23,14 +23,37 @@
   </head>
   <body>
     <section>
-      <ul>
-        <li><a href="../index.html">HOME</a></li>
-        <li><a href="tournaments.html">TOURNAMENTS</a></li>
-        <li><a href="events.html">EVENTS</a></li>
-        <li><a href="#">MEDIA</a></li>
-        <li><a href="aboutus.html">ABOUT US</a></li>
-      </ul>
+      <a href="../index.html ">HOME</a> |
+      <a href="tournaments.html">TOURNAMENTS</a> |
+      <a href="events.html">EVENTS</a> | <a href="#">MEDIA</a> |
+      <a href="aboutus.html">ABOUT US</a>
     </section>
-    <h1>MEDIA</h1>
+    <section>
+      <h1>MEDIA</h1>
+      <picture>
+        <source media="(min-width:1400px)" srcset="../img/dnd1800.png" />
+        <source media="(min-width:1000px)" srcset="../img/dnd1200.png" />
+        <source media="(min-width:900px)" srcset="../img/dnd600.png.png" />
+        <source srcset="../img/dnd600.png" />
+        <img src="" alt="dungeons and dragons" />
+      </picture>
+    </section>
+    <section>
+      <h1>The audio song</h1>
+
+      <p>Click on the play button to play a sound:</p>
+
+      <audio controls>
+        <source src="../resources/song.mp3" type="audio/mp3" />
+        Your browser does not support the audio element.
+      </audio>
+
+      <h1>Video Dungeons and dragons</h1>
+
+      <p>Click on the play button to play a vídeo:</p>
+      <video id="video" controls preload="metadata">
+        <source src="../resources/video.MP4" type="video/mp4" />
+      </video>
+    </section>
   </body>
 </html>
