@@ -38,40 +38,32 @@
             </p>
             <fieldset>
               <legend>Edad:</legend>
-              <input type="radio" id="1" name="1" value="1" >
+              <input type="radio" id="1" name="edad" value="1" >
               <label for="1">18 a 25</label>
-              <input type="radio" id="2" name="2" value="2">
+              <input type="radio" id="2" name="edad" value="2">
               <label for="2">25 a 35</label>
-              <input type="radio" id="3" name="3" value="3">
+              <input type="radio" id="3" name="edad" value="3">
               <label for="3">36 a 45<label>
-              <input type="radio" id="4" name="4" value="4">
+              <input type="radio" id="4" name="edad" value="4">
               <label for="4">46 a 55<label>
-              <input type="radio" id="5" name="5" value="5" >
+              <input type="radio" id="5" name="edad" value="5" >
                <label for="5">Mayor de 55<label>
-              <input type="radio" id="6" name="6" value="6" checked>
+              <input type="radio" id="6" name="edad" value="6" checked>
               <label for="5">NS/NC<label>
             </fieldset>
           </br>
 <fieldset>
   <legend>Intereses</legend>
-  <p>
-  <label for="o1">Science</label>
-  <input type="checkbox" name="o1" value="a" >
-</p>
-<p>
-  <label for="o2">Arts and Crafs</label>
-  <input type="checkbox" name="o2" value="b">
-</p>
-<p>
-  <label for="o3">Literature</label>
-  <input type="checkbox" name="o3" value="c">
-</p><p>
-  <label for="o4">Technology and Gadgets</label>
-  <input type="checkbox" name="o4" value="d">
-</p><p>
-  <label for="o5">Self Improvement</label>
-  <input type="checkbox" name="o4" value="e">
-</p>
+  <label for="o1">Arte y literatura</label>
+  <input type="checkbox" name="o1" value="a" ><br />
+  <label for="o2">Ciencia y Tecnología</label>
+  <input type="checkbox" name="o2" value="b"><br />
+  <label for="o3">Política y Sociedad</label>
+  <input type="checkbox" name="o3" value="c"><br />
+  <label for="o4">Ocio y Deporte</label>
+  <input type="checkbox" name="o4" value="d"><br />
+  <label for="o5">Cine y Televisión</label>
+  <input type="checkbox" name="o4" value="e"><br />
 </fieldset>
 
 <p>
@@ -112,15 +104,35 @@
   </p>
   <h2>Probabilidad de aprobar</h2>
   <label for="">Porcentaje</label>
-  <input type="text" name="" id="">
+  <input
+              type="number"
+              min="0"
+              max="100"
+              step="5"
+              name="porc"
+              id="porc"
+              value="50"
+            />
 </fieldset>
             
-        <p>
-            <input type="submit" value="Send data" />
-        </p>
+<p class="botones">
+  <input
+    type="submit"
+    name="envio"
+    class="boton"
+    value="Enviar Formulario"
+  />
+
+  <input
+    type="reset"
+    name="reset"
+    class="botonRein"
+    value="Reiniciar Formulario"
+  />
+</p>
     </form> 
 
-
 </section>
+
   </body>
 </html>
