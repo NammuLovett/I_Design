@@ -1,0 +1,72 @@
+* {
+  background-color: antiquewhite;
+}
+
+h1 {
+  width: 50vw;
+  padding: 20px;
+  margin: 10px;
+  border: 5px solid black;
+  background-color: white;
+
+  animation: mi_animacion 10s linear 2s 3 alternate forwards,
+    mi_animacion2 5s linear 7s infinite alternate backwards;
+  /*
+  Carga el archivo keyframe
+  animation-name: mi_animacion;
+  
+  Duración
+  animation-duration: 5s;
+  
+  Retardo al empezar
+  animation-delay: 0s;
+ 
+ velocidad de la animación
+  animation-timing-function: linear;
+  
+  iteraciones de la animación
+  animation-iteration-count: infinite;
+  
+  Estado de la animación al finalizar la iteración backward / forward / both
+  animation-fill-mode: forwards;
+  
+  Indica la dirección de la animación  reverse 10-0 / alternate 0-10-0
+  animation-direction: alternate;
+*/
+}
+
+/* h2 {
+  animation: name duration timing-function delay iteration-count direction
+    fill-mode;
+} */
+
+@keyframes mi_animacion {
+  20% {
+    color: blueviolet;
+    background-color: aquamarine;
+  }
+
+  50% {
+    color: blue;
+    background-color: yellowgreen;
+  }
+
+  80% {
+    color: red;
+    background-color: blueviolet;
+  }
+
+  100% {
+    color: yellow;
+    background-color: orange;
+  }
+}
+
+@keyframes mi_animacion2 {
+  50% {
+    transform: translateX(10vw);
+  }
+  100% {
+    transform: translateX(50vw);
+  }
+}
