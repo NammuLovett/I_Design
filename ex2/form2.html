@@ -29,15 +29,15 @@
             <legend>Personal information</legend>
                 <fieldset>
                     <legend> Title:</legend>
-                    <input type="radio" id="Ms." name="Ms." value="Ms." >
+                    <input type="radio" id="Ms." name="radio" value="Ms." >
                     <label for="1">Ms.</label>
-                    <input type="radio" id="Mrs." name="Mrs." value="Mrs.">
+                    <input type="radio" id="Mrs." name="radio" value="Mrs.">
                     <label for="2">Mrs.</label>
-                    <input type="radio" id="Dr" name="Dr" value="Dr">
+                    <input type="radio" id="Dr" name="radio" value="Dr">
                     <label for="3">Dr<label>
-                    <input type="radio" id="Mx" name="Mx" value="Mx">
+                    <input type="radio" id="Mx" name="radio" value="Mx">
                     <label for="4">Mx<label>
-                    <input type="radio" id="Ind" name="Ind" value="Ind" checked>
+                    <input type="radio" id="Ind" name="radio" value="Ind" checked>
                     <label for="5">Ind<label>
                 </fieldset>
             <p>
@@ -92,14 +92,14 @@
         <fieldset>
             <legend>Subcription information</legend>
             <label for="milista">Subscription type</label>
-                <input list="milista" id="milista" name="milista" size="30" maxlength="50" required>
-                <datalist id="input8" name="input8">
-                <option value="Daily Subscription">Daily Subscription</option>
-                <option value="Weekly Subscription">Weekly Subscription</option>
-                <option value="Quarterly Subscription">Quarterly Subscription</option>
-                <option value="Monthly Subscription">Monthly Subscription</option>
-                <option value="Yearly Subscription">Yearly Subscription</option>
-                <option value="Unlimited Subscription">Unlimited Subscription</option>
+                <input list="milista" name="milista" size="30" required>
+                <datalist id="milista" name="milista">
+                <option value="D">Daily Subscription</option>
+                <option value="W">Weekly Subscription</option>
+                <option value="Q">Quarterly Subscription</option>
+                <option value="M">Monthly Subscription</option>
+                <option value="Y">Yearly Subscription</option>
+                <option value="U">Unlimited Subscription</option>
               </datalist>
               </p>
 
@@ -146,8 +146,8 @@
                 <label for="cardNum">Card Number:</label>
                 <input type="text" name="cardNum" id="cardNum" size="20" pattern="[\d]{16}|(((\d){4}\s){3}(\d){4})" required>
             </p>
-            <label for="disCode">If you have a discount code please enter it here:</label>
-            <input type="text" placeholder="disCode" pattern="(?!.*(00|11|22|33))[A-Z]{3}[0123]{2}">
+            <label for="disCode2">If you have a discount code please enter it here:</label>
+            <input type="text" name="disCode" placeholder="code" pattern="(?!.*(00|11|22|33))[A-Z]{3}[0123]{2}">
         </fieldset>
 
         <fieldset>
