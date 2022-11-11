@@ -49,8 +49,6 @@ input[type='radio']:checked + label {
 }
 
 input[type='text'] {
-  /*border-top: 2px solid grey;
-    border-left: 2px solid grey;*/
   border-bottom: none;
   border-right: none;
 }
@@ -64,7 +62,7 @@ label {
   color: green;
 }
 
-h3 {
+h2 {
   color: darkorchid;
 }
 
@@ -95,10 +93,6 @@ input[type='radio']:hover {
   background-color: lemonchiffon;
 }
 
-/*#e36 {
-    box-shadow: 0px 0px 10px 0.5px green;
-}*/
-
 .boton {
   font-size: medium;
   color: royalblue;
@@ -111,7 +105,7 @@ input[type='radio']:hover {
   border-right: 2px solid grey;
 }
 
-.botonRein {
+.resetb {
   font-size: medium;
   color: grey;
   border-radius: 5px;

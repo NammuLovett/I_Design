@@ -36,21 +36,27 @@
                 <label for="input2"> Last Name</label>
                 <input type="text" name="input2" placeholder="obligatorio" id="input2" size="50" maxlength="50" required>
             </p>
-            <fieldset>
-              <legend>Edad:</legend>
-              <input type="radio" id="1" name="edad" value="1" >
-              <label for="1">18 a 25</label>
-              <input type="radio" id="2" name="edad" value="2">
-              <label for="2">25 a 35</label>
-              <input type="radio" id="3" name="edad" value="3">
-              <label for="3">36 a 45<label>
-              <input type="radio" id="4" name="edad" value="4">
-              <label for="4">46 a 55<label>
-              <input type="radio" id="5" name="edad" value="5" >
-               <label for="5">Mayor de 55<label>
-              <input type="radio" id="6" name="edad" value="6" checked>
-              <label for="5">NS/NC<label>
-            </fieldset>
+           <fieldset class="dentro">
+            <legend>Edad:</legend>
+
+            <input type="radio" name="edad" id="e18" value="18" />
+            <label for="edad" class="edad">18 a 25</label>
+
+            <input type="radio" name="edad" id="e26" value="26" />
+            <label for="edad" class="edad">26 a 35</label>
+
+            <input type="radio" name="edad" id="e36" value="36" />
+            <label for="edad" class="edad">36 a 45</label>
+
+            <input type="radio" name="edad" id="e46" value="46" />
+            <label for="edad" class="edad">46 a 55</label>
+
+            <input type="radio" name="edad" id="e56" value="56" />
+            <label for="edad" class="edad">Mayor de 55</label>
+
+            <input type="radio" name="edad" id="ns" value="ns/nc" checked />
+            <label for="edad" class="edad">NS/NC</label>
+          </fieldset>
           </br>
 <fieldset>
   <legend>Intereses</legend>
@@ -68,39 +74,44 @@
 
 <p>
   <label for="cp">Código Postal</label>
-  <input type="text" maxlength="5">
+  <input type="text" name="cp" id="cp" pattern="\d{5}" size="5" />
 </p>
 </fieldset>
 <fieldset>
   <legend>Otros datos</legend>
-  <h2>Color favorito</h2>
-  <input type="radio" id="1" name="1" value="1" checked>
-  <label for="1">Rojo</label>
-  <input type="radio" id="2" name="2" value="2">
-  <label for="2">Azul</label>
-  <input type="radio" id="3" name="3" value="3">
-  <label for="3">Amarillo<label>
-  <input type="radio" id="4" name="4" value="4" >
-  <label for="5">Verde<label>
+  <h3>Color Favorito</h3>
+
+          <input type="radio" name="color" id="color" value="rojo" />
+          <label for="rojo" class="color">Rojo</label>
+
+          <input type="radio" name="color" id="color" value="azul" />
+          <label for="rojo" class="color">Azul</label>
+
+          <input type="radio" name="color" id="color" value="amarillo" />
+          <label for="rojo" class="color">Amarillo</label>
+
+          <input type="radio" name="color" id="color" value="verde" />
+          <label for="rojo" class="color">Verde</label>
+
 
   <h2>Asignaturas favoritas</h2>
   <p>
     <label for="o1">DWEC</label>
-    <input type="checkbox" name="o1" value="a" >
+    <input type="checkbox" name="dwec" id="dwec" value="a" >
   </p>
   <p>
     <label for="o2">DWES</label>
-    <input type="checkbox" name="o2" value="b">
+    <input type="checkbox" name="dwes"  id="dwes"  value="b">
   </p>
   <p>
     <label for="o3">DIW</label>
-    <input type="checkbox" name="o3" value="c">
+    <input type="checkbox" name="diw" id="diw"  value="c" checked>
   </p><p>
     <label for="o4">DAW</label>
-    <input type="checkbox" name="o4" value="d">
+    <input type="checkbox" name="daw" id="daw" value="d">
   </p><p>
     <label for="o5">EIEM</label>
-    <input type="checkbox" name="o4" value="e">
+    <input type="checkbox" name="eiem" id="eiem"  value="eiem">
   </p>
   <h2>Probabilidad de aprobar</h2>
   <label for="">Porcentaje</label>
@@ -126,7 +137,7 @@
   <input
     type="reset"
     name="reset"
-    class="botonRein"
+    class="resetb"
     value="Reiniciar Formulario"
   />
 </p>
