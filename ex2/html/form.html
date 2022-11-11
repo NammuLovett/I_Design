@@ -79,11 +79,11 @@
               <p>alignment</p>
           </strong>
           <p>
-              <input type="radio" id="good" name="radio" value="1" checked>
+              <input type="radio" id="good" name="radio" value="Good" checked>
               <label for="si">Good</label>
-              <input type="radio" id="bad" name="radio" value="2">
+              <input type="radio" id="bad" name="radio" value="bad">
               <label for="no">bad</label>
-              <input type="radio" id="neutral" name="radio" value="3">
+              <input type="radio" id="neutral" name="radio" value="neutral">
               <label for="nsnc">neutral<label>
           </p>
           <hr>
@@ -92,13 +92,13 @@
           </strong>
           <p>
               <label for="o1">Role games</label>
-              <input type="checkbox" name="o1" value="a" checked>
+              <input type="checkbox" name="o1" value="Role games" checked>
               <label for="o2">Board Games</label>
-              <input type="checkbox" name="o2" value="b">
+              <input type="checkbox" name="o2" value="Board Games">
               <label for="o3">Online games</label>
-              <input type="checkbox" name="o3" value="c">
+              <input type="checkbox" name="o3" value="Online games">
               <label for="o4">Furros</label>
-              <input type="checkbox" name="o4" value="d">
+              <input type="checkbox" name="o4" value="Furros">
 
           </p>
 
@@ -186,9 +186,57 @@
         $telefono = $_GET["tlf"];
         $color = $_GET["color"];
         $web = $_GET["website"];
+        $alignment = $_GET["radio"];
+        $o1 = $_GET["o1"];
+        $o2 = $_GET["o2"];
+        $o3 = $_GET["o3"];
+        $o4 = $_GET["o4"];
+        $lista1 = $_GET["lista1"];
+        $lista2 = $_GET["lista2"];
+        $milista = $_GET["milista"];
+        $textarea = $_GET["textarea"];
+        
 
 
-        echo "Bienvenido a la mazmorra $name $surname $surname2, vives en la calle $adress y tu email es $email con fecha de nacimiento $date";
+
+        echo "Bienvenido a la mazmorra;
+
+        echo $name.
+    "</br>".
+        $surname.
+        "</br>".
+        $surname2.
+        "</br>".
+        $adress.
+        "</br>".
+        $date.
+        "</br>".
+        $email.
+        "</br>".
+        $telefono.
+        "</br>".
+        $color.
+        "</br>".
+        $web.
+        "</br>".
+        $alignment.
+        "</br>".
+        $o1 .
+        "</br>".
+        $o2.
+        "</br>".
+        $o3.
+        "</br>".
+        $o4.
+        "</br>".
+        $lista1.
+        "</br>".
+        $lista2 .
+        "</br>".
+        $milista.
+        "</br>".
+        $textarea.
+        "</br>".
     }
     ?>
 
