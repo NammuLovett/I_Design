@@ -1,55 +1,94 @@
 * {
   font-family: Arial, Helvetica, sans-serif;
   margin: 0px;
+  padding: 0px;
   box-sizing: border-box;
 }
 header {
-  padding: 4%;
-  height: 15%;
-  width: calc(100vw - 20px);
+  height: 25%;
+  color: darkred;
+  font-size: 2em;
+  text-align: center;
+  padding: 40px;
 }
 body {
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-
   background: rgb(131, 58, 180);
-  background: linear-gradient(0deg, darkred 0%, darkorange 70%);
-  align-items: center;
-  width: calc(100vw - 20px);
+  background: linear-gradient(to bottom, darkorange 0%, darkred 100%);
+  height: 100vh;
 }
 main {
-  height: 70vh;
-  width: calc(100vw - 20px);
+  height: 65%;
+  text-align: center;
+  color: white;
 }
-h1,
-h2 {
+footer {
+  height: 10%;
+  padding: 10px;
+  color: darkorange;
+  font-size: 1vw;
   text-align: center;
 }
-h1 {
-  color: darkred;
-  font-size: 4em;
-}
+
 div {
   display: inline-block;
-
-  border-style: solid;
+  border: 5px solid white;
   border-radius: 5px;
   width: 31%;
   margin: 1%;
-  height: 400px;
-
-  border-color: white;
-  border-width: 5px;
+  height: 100%;
   text-align: center;
+  transition: background-color 2s linear;
 }
-i {
-  font-size: 15em;
+div:hover {
+  transition: background-color 2s linear;
+  background-color: indigo;
+}
+div p {
+  text-align: center;
+  padding: 10vh 5vw;
+  font-size: 2vh;
+  transform: rotateZ(180deg) scale(0.25, 0.25);
+  opacity: 0%;
+  font-size: 2vw;
+  color: darkorange;
+  transition: transform 2s linear, opacity 2s linear, scale 2s linear,
+    color 2s linear;
+}
+div p:hover {
+  transition: transform 2s linear, opacity 2s linear,
+    font-size 2s linear scale 2s linear color 2s linear;
+  transform: rotateZ(0deg);
+  opacity: 100%;
+  font-size: 2vw;
   color: white;
-  padding: 10%;
 }
-footer {
-  color: orangered;
-  height: 15%;
-  padding: 10%;
-  width: calc(100vw - 20px);
+
+div i {
+  font-size: 200px;
+  margin: 50px;
+  margin-bottom: 30px;
+  transition: all, 3s;
+}
+
+div i:hover {
+  color: darkorange;
+  font-size: 230px;
+  margin-top: 20px;
+}
+div p {
+  text-align: center;
+  margin: 50px;
+  margin-top: 0px;
+  font-size: 2em;
+  color: #ff8c0000;
+  transform: scale(0.3) rotateZ(90deg);
+  filter: blur(1px);
+  text-align: center;
+  transition-property: color, transform, filter;
+  transition-duration: 3s;
+}
+div p:hover {
+  color: darkorange;
+  transform: scale(1);
+  filter: blur(0px);
 }
