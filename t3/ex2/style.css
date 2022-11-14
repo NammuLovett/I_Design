@@ -1,6 +1,55 @@
 * {
-  font-family: sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0px;
+  box-sizing: border-box;
+}
+header {
+  padding: 4%;
+  height: 15%;
+  width: calc(100vw - 20px);
 }
 body {
-  background-color: antiquewhite;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+
+  background: rgb(131, 58, 180);
+  background: linear-gradient(0deg, darkred 0%, darkorange 70%);
+  align-items: center;
+  width: calc(100vw - 20px);
+}
+main {
+  height: 70vh;
+  width: calc(100vw - 20px);
+}
+h1,
+h2 {
+  text-align: center;
+}
+h1 {
+  color: darkred;
+  font-size: 4em;
+}
+div {
+  display: inline-block;
+
+  border-style: solid;
+  border-radius: 5px;
+  width: 31%;
+  margin: 1%;
+  height: 400px;
+
+  border-color: white;
+  border-width: 5px;
+  text-align: center;
+}
+i {
+  font-size: 15em;
+  color: white;
+  padding: 10%;
+}
+footer {
+  color: orangered;
+  height: 15%;
+  padding: 10%;
+  width: calc(100vw - 20px);
 }
