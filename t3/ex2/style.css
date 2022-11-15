@@ -5,11 +5,11 @@
   box-sizing: border-box;
 }
 header {
-  height: 25%;
+  height: 20%;
   color: darkred;
-  font-size: 2em;
+  font-size: 2vw;
   text-align: center;
-  padding: 40px;
+  padding-top: 2%;
 }
 body {
   background: rgb(131, 58, 180);
@@ -17,13 +17,13 @@ body {
   height: 100vh;
 }
 main {
-  height: 65%;
+  height: 70%;
   text-align: center;
   color: white;
 }
 footer {
   height: 10%;
-  padding: 10px;
+  padding: 1vw;
   color: darkorange;
   font-size: 1vw;
   text-align: center;
@@ -33,62 +33,44 @@ div {
   display: inline-block;
   border: 5px solid white;
   border-radius: 5px;
-  width: 31%;
+  width: 30%;
+  height: 80%;
+  text-align: center;
+  transition: background-color 2s linear;
   margin: 1%;
-  height: 100%;
-  text-align: center;
-  transition: background-color 2s linear;
-}
-div:hover {
-  transition: background-color 2s linear;
-  background-color: indigo;
-}
-div p {
-  text-align: center;
-  padding: 10vh 5vw;
-  font-size: 2vh;
-  transform: rotateZ(180deg) scale(0.25, 0.25);
-  opacity: 0%;
-  font-size: 2vw;
-  color: darkorange;
-  transition: transform 2s linear, opacity 2s linear, scale 2s linear,
-    color 2s linear;
-}
-div p:hover {
-  transition: transform 2s linear, opacity 2s linear,
-    font-size 2s linear scale 2s linear color 2s linear;
-  transform: rotateZ(0deg);
-  opacity: 100%;
-  font-size: 2vw;
-  color: white;
 }
 
 div i {
-  font-size: 200px;
-  margin: 50px;
-  margin-bottom: 30px;
+  font-size: 12vw;
+  padding-top: 1vw;
   transition: all, 3s;
 }
 
 div i:hover {
   color: darkorange;
-  font-size: 230px;
-  margin-top: 20px;
+  transform: scale(1.1);
 }
+
 div p {
   text-align: center;
-  margin: 50px;
-  margin-top: 0px;
-  font-size: 2em;
+  margin: 1vw;
+  font-size: 2vw;
   color: #ff8c0000;
-  transform: scale(0.3) rotateZ(90deg);
-  filter: blur(1px);
   text-align: center;
+
+  transform: scale(0.1) rotateZ(45deg);
+  filter: blur(3px);
   transition-property: color, transform, filter;
   transition-duration: 3s;
 }
+
 div p:hover {
-  color: darkorange;
+  color: white;
   transform: scale(1);
   filter: blur(0px);
+}
+
+div:hover {
+  transition: background-color 2s linear;
+  background-color: indigo;
 }
