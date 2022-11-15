@@ -14,7 +14,7 @@ body {
     rgb(154, 240, 93),
     rgb(240, 165, 72)
   );
-  animation: gradient 15s ease infinite;
+  animation: gradient 10s ease infinite;
   background-size: 400% 400%;
 }
 
@@ -31,12 +31,23 @@ body {
 }
 
 h1 {
+  /* Propiedades genéricas */
   font-family: 'Abril Fatface', cursive;
-}
-h2 {
-  font-family: 'Bangers', cursive;
+  font-size: 6em;
+  margin: 2vh 3vw;
+  text-align: center;
+
+  /* Línea impostor */
+  text-shadow: 1px 1px 0px white, -1px -1px 0px white, -1px 1px 0px white,
+    1px -1px 0px white;
+  /**/
+
+  border: 6px solid black;
+  background-color: rebeccapurple;
+  animation: titulo 20s linear 2s infinite alternate-reverse backwards;
 }
 
+/*Animación título*/
 @keyframes titulo {
   20% {
     background-color: darkmagenta;
@@ -53,29 +64,54 @@ h2 {
   80% {
     background-color: crimson;
   }
-
   100% {
     background-color: darkblue;
   }
 }
 
+h2 {
+  font-family: 'Bangers', cursive;
+  background-color: crimson;
+  border: 5px solid black;
+
+  /*Línea borde chungo*/
+  text-shadow: 1px 1px 0px white, -1px -1px 0px white, -1px 1px 0px white,
+    1px -1px 0px white;
+
+  margin: 2vh 35vw;
+  padding: 0 1vw;
+  font-size: 4em;
+
+  transform: translate(-610px, 0px); /*Posición inicial*/
+
+  text-align: center;
+  animation: bloque 25s linear 2s infinite forwards normal;
+}
+
+/* animación bloque */
+
 @keyframes bloque {
   16% {
+    transform: translate(610px, 0px); /*Posición primera iteración*/
     background-color: darkred;
   }
 
   32% {
+    transform: translate(610px, 0px) rotatez(180deg);
     background-color: orangered;
   }
 
   48% {
+    transform: translate(0px, 500px) rotatey(180deg) rotatez(90deg);
     background-color: gold;
   }
 
   64% {
+    transform: translate(600px, 600px) rotatez(180deg);
     background-color: darkgreen;
   }
   80% {
+    transform: translate(-610px, 600px) rotatex(180deg);
     background-color: royalblue;
   }
   100% {
