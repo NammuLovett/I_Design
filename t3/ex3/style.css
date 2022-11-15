@@ -1,0 +1,84 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+
+  background: linear-gradient(
+    -45deg,
+    rgb(232, 95, 240),
+    rgb(62, 180, 240),
+    rgb(154, 240, 93),
+    rgb(240, 165, 72)
+  );
+  animation: gradient 15s ease infinite;
+  background-size: 400% 400%;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+h1 {
+  font-family: 'Abril Fatface', cursive;
+}
+h2 {
+  font-family: 'Bangers', cursive;
+}
+
+@keyframes titulo {
+  20% {
+    background-color: darkmagenta;
+  }
+
+  40% {
+    background-color: darkslategray;
+  }
+
+  60% {
+    background-color: darkorange;
+  }
+
+  80% {
+    background-color: crimson;
+  }
+
+  100% {
+    background-color: darkblue;
+  }
+}
+
+@keyframes bloque {
+  16% {
+    background-color: darkred;
+  }
+
+  32% {
+    background-color: orangered;
+  }
+
+  48% {
+    background-color: gold;
+  }
+
+  64% {
+    background-color: darkgreen;
+  }
+  80% {
+    background-color: royalblue;
+  }
+  100% {
+    background-color: darkorchid;
+  }
+}
