@@ -5,10 +5,7 @@
 }
 
 :root {
-  --tiempo_anim1: 2s;
-  --tiempo_anim2: 17s;
-  /* --aniCascada: prueba var(--tiempo_anim2) linear 2s 1 forwards; */
-  --aniDia: prueba var(--tiempo_anim2) linear 2s 1 forwards;
+  /* colores */
 
   --color_texto: #5a0075;
   --color_borde: #dd0a85;
@@ -32,7 +29,41 @@
   --color2_6: rgb(163, 84, 161);
   --color2_7: rgb(234, 161, 216);
   --color2_8: rgb(235, 203, 203);
+
+  /* tiempo y delay */
+
+  --tiempo_anim1: 2s;
+  --tiempo_anim2: 17s;
+
+  --delay1: 750ms;
+  --delay2: calc(var(--delay1) * 2);
+  --delay3: calc(var(--delay1) * 3);
+  --delay4: calc(var(--delay1) * 4);
+  --delay5: calc(var(--delay1) * 5);
+  --delay6: calc(var(--delay1) * 6);
+  --delay7: calc(var(--delay1) * 7);
+  --delay8: calc(var(--delay1) * 8);
+  --delay9: calc(var(--delay1) * 9);
+  --delay10: calc(var(--delay1) * 10);
+  --delay11: calc(var(--delay1) * 11);
+  --delay12: calc(var(--delay1) * 12);
+  --delay13: calc(var(--delay1) * 13);
+  --delay14: calc(var(--delay1) * 14);
+  --delay15: calc(var(--delay1) * 15);
+
+  /* animaciones */
+
+  --aniCas1: cascada var(--tiempo_anim2) linear var(--delay1) 1 normal forwards;
+  --aniCas2: cascada var(--tiempo_anim2) linear var(--delay2) 1 normal forwards;
+  --aniCas3: cascada var(--tiempo_anim2) linear var(--delay3) 1 normal forwards;
+  --aniCas4: cascada var(--tiempo_anim2) linear var(--delay4) 1 normal forwards;
+  --aniCas5: cascada var(--tiempo_anim2) linear var(--delay5) 1 normal forwards;
+  --aniCas6: cascada var(--tiempo_anim2) linear var(--delay6) 1 normal forwards;
+  --aniCas7: cascada var(--tiempo_anim2) linear var(--delay7) 1 normal forwards;
+  --aniCas8: cascada var(--tiempo_anim2) linear var(--delay8) 1 normal forwards;
 }
+
+/* ----------------------------------------------------------------------- */
 
 body {
   background-color: var(--color_texto);
@@ -85,12 +116,12 @@ h3 {
   height: 100px;
 }
 
-/* ------------------------------------------------------ */
-
+/* ----------------------------------------------------------------------- */
 .fila1 {
-  animation: var(--aniCascada);
+  animation: var(--aniCas1);
 }
-@keyframes prueba {
+
+@keyframes cascada {
   from {
     background-color: var(--color1_1);
   }
@@ -124,9 +155,10 @@ h3 {
 }
 
 .fila2 {
-  animation: var(--aniCascada);
+  animation: var(--aniCas2);
 }
-@keyframes prueba {
+
+@keyframes cascada {
   from {
     background-color: var(--color1_1);
   }
@@ -160,9 +192,10 @@ h3 {
 }
 
 .fila3 {
-  animation: var(--aniCascada);
+  animation: var(--aniCas3);
 }
-@keyframes prueba {
+
+@keyframes cascada {
   from {
     background-color: var(--color1_1);
   }
@@ -196,9 +229,10 @@ h3 {
 }
 
 .fila4 {
-  animation: var(--aniCascada);
+  animation: var(--aniCas4);
 }
-@keyframes prueba {
+
+@keyframes cascada {
   from {
     background-color: var(--color1_1);
   }
@@ -232,9 +266,10 @@ h3 {
 }
 
 .fila5 {
-  animation: var(--aniCascada);
+  animation: var(--aniCas5);
 }
-@keyframes prueba {
+
+@keyframes cascada {
   from {
     background-color: var(--color1_1);
   }
@@ -268,9 +303,10 @@ h3 {
 }
 
 .fila6 {
-  animation: var(--aniCascada);
+  animation: var(--aniCas6);
 }
-@keyframes prueba {
+
+@keyframes cascada {
   from {
     background-color: var(--color1_1);
   }
@@ -304,9 +340,10 @@ h3 {
 }
 
 .fila7 {
-  animation: var(--aniCascada);
+  animation: var(--aniCas7);
 }
-@keyframes prueba {
+
+@keyframes cascada {
   from {
     background-color: var(--color1_1);
   }
@@ -340,9 +377,10 @@ h3 {
 }
 
 .fila8 {
-  animation: var(--aniCascada);
+  animation: var(--aniCas8);
 }
-@keyframes prueba {
+
+@keyframes cascada {
   from {
     background-color: var(--color1_1);
   }
@@ -372,567 +410,5 @@ h3 {
   }
   to {
     background-color: var(--color1_9);
-  }
-}
-
-/* ----------------------------------------------- */
-.casilla8 {
-  animation: var(--aniDia);
-}
-
-@keyframes prueba {
-  from {
-    background-color: var(--color2_1);
-  }
-  20% {
-    background-color: var(--color2_2);
-  }
-
-  30% {
-    background-color: var(--color2_3);
-  }
-
-  40% {
-    background-color: var(--color2_4);
-  }
-
-  50% {
-    background-color: var(--color2_5);
-  }
-  60% {
-    background-color: var(--color2_6);
-  }
-  70% {
-    background-color: var(--color2_7);
-  }
-  to {
-    background-color: var(--color2_8);
-  }
-}
-
-.casilla7,
-.casilla16 {
-  animation: var(--aniDia);
-}
-
-@keyframes prueba {
-  from {
-    background-color: var(--color2_1);
-  }
-  20% {
-    background-color: var(--color2_2);
-  }
-
-  30% {
-    background-color: var(--color2_3);
-  }
-
-  40% {
-    background-color: var(--color2_4);
-  }
-
-  50% {
-    background-color: var(--color2_5);
-  }
-  60% {
-    background-color: var(--color2_6);
-  }
-  70% {
-    background-color: var(--color2_7);
-  }
-  to {
-    background-color: var(--color2_8);
-  }
-}
-
-.casilla6,
-.casilla15,
-.casilla24 {
-  animation: var(--aniDia);
-}
-
-@keyframes prueba {
-  from {
-    background-color: var(--color2_1);
-  }
-  20% {
-    background-color: var(--color2_2);
-  }
-
-  30% {
-    background-color: var(--color2_3);
-  }
-
-  40% {
-    background-color: var(--color2_4);
-  }
-
-  50% {
-    background-color: var(--color2_5);
-  }
-  60% {
-    background-color: var(--color2_6);
-  }
-  70% {
-    background-color: var(--color2_7);
-  }
-  to {
-    background-color: var(--color2_8);
-  }
-}
-
-.casilla5,
-.casilla14,
-.casilla23,
-.casilla32 {
-  animation: var(--aniDia);
-}
-
-@keyframes prueba {
-  from {
-    background-color: var(--color2_1);
-  }
-  20% {
-    background-color: var(--color2_2);
-  }
-
-  30% {
-    background-color: var(--color2_3);
-  }
-
-  40% {
-    background-color: var(--color2_4);
-  }
-
-  50% {
-    background-color: var(--color2_5);
-  }
-  60% {
-    background-color: var(--color2_6);
-  }
-  70% {
-    background-color: var(--color2_7);
-  }
-  to {
-    background-color: var(--color2_8);
-  }
-}
-
-.casilla4,
-.casilla13,
-.casilla22,
-.casilla31,
-.casilla40 {
-  animation: var(--aniDia);
-}
-
-@keyframes prueba {
-  from {
-    background-color: var(--color2_1);
-  }
-  20% {
-    background-color: var(--color2_2);
-  }
-
-  30% {
-    background-color: var(--color2_3);
-  }
-
-  40% {
-    background-color: var(--color2_4);
-  }
-
-  50% {
-    background-color: var(--color2_5);
-  }
-  60% {
-    background-color: var(--color2_6);
-  }
-  70% {
-    background-color: var(--color2_7);
-  }
-  to {
-    background-color: var(--color2_8);
-  }
-}
-
-.casilla3,
-.casilla12,
-.casilla21,
-.casilla30,
-.casilla39,
-.casilla48 {
-  animation: var(--aniDia);
-}
-
-@keyframes prueba {
-  from {
-    background-color: var(--color2_1);
-  }
-  20% {
-    background-color: var(--color2_2);
-  }
-
-  30% {
-    background-color: var(--color2_3);
-  }
-
-  40% {
-    background-color: var(--color2_4);
-  }
-
-  50% {
-    background-color: var(--color2_5);
-  }
-  60% {
-    background-color: var(--color2_6);
-  }
-  70% {
-    background-color: var(--color2_7);
-  }
-  to {
-    background-color: var(--color2_8);
-  }
-}
-
-.casilla2,
-.casilla11,
-.casilla20,
-.casilla29,
-.casilla38,
-.casilla47,
-.casilla56 {
-  animation: var(--aniDia);
-}
-
-@keyframes prueba {
-  from {
-    background-color: var(--color2_1);
-  }
-  20% {
-    background-color: var(--color2_2);
-  }
-
-  30% {
-    background-color: var(--color2_3);
-  }
-
-  40% {
-    background-color: var(--color2_4);
-  }
-
-  50% {
-    background-color: var(--color2_5);
-  }
-  60% {
-    background-color: var(--color2_6);
-  }
-  70% {
-    background-color: var(--color2_7);
-  }
-  to {
-    background-color: var(--color2_8);
-  }
-}
-
-.casilla1,
-.casilla10,
-.casilla19,
-.casilla28,
-.casilla37,
-.casilla46,
-.casilla55,
-.casilla64 {
-  animation: var(--aniDia);
-}
-
-@keyframes prueba {
-  from {
-    background-color: var(--color2_1);
-  }
-  20% {
-    background-color: var(--color2_2);
-  }
-
-  30% {
-    background-color: var(--color2_3);
-  }
-
-  40% {
-    background-color: var(--color2_4);
-  }
-
-  50% {
-    background-color: var(--color2_5);
-  }
-  60% {
-    background-color: var(--color2_6);
-  }
-  70% {
-    background-color: var(--color2_7);
-  }
-  to {
-    background-color: var(--color2_8);
-  }
-}
-
-.casilla9,
-.casilla8,
-.casilla18,
-.casilla28,
-.casilla27,
-.casilla36,
-.casilla45,
-.casilla54,
-.casilla63 {
-  animation: var(--aniDia);
-}
-
-@keyframes prueba {
-  from {
-    background-color: var(--color2_1);
-  }
-  20% {
-    background-color: var(--color2_2);
-  }
-
-  30% {
-    background-color: var(--color2_3);
-  }
-
-  40% {
-    background-color: var(--color2_4);
-  }
-
-  50% {
-    background-color: var(--color2_5);
-  }
-  60% {
-    background-color: var(--color2_6);
-  }
-  70% {
-    background-color: var(--color2_7);
-  }
-  to {
-    background-color: var(--color2_8);
-  }
-}
-
-.casilla17,
-.casilla26,
-.casilla35,
-.casilla44,
-.casilla53,
-.casilla62 {
-  animation: var(--aniDia);
-}
-
-@keyframes prueba {
-  from {
-    background-color: var(--color2_1);
-  }
-  20% {
-    background-color: var(--color2_2);
-  }
-
-  30% {
-    background-color: var(--color2_3);
-  }
-
-  40% {
-    background-color: var(--color2_4);
-  }
-
-  50% {
-    background-color: var(--color2_5);
-  }
-  60% {
-    background-color: var(--color2_6);
-  }
-  70% {
-    background-color: var(--color2_7);
-  }
-  to {
-    background-color: var(--color2_8);
-  }
-}
-
-.casilla25,
-.casilla34,
-.casilla43,
-.casilla52,
-.casilla61 {
-  animation: var(--aniDia);
-}
-
-@keyframes prueba {
-  from {
-    background-color: var(--color2_1);
-  }
-  20% {
-    background-color: var(--color2_2);
-  }
-
-  30% {
-    background-color: var(--color2_3);
-  }
-
-  40% {
-    background-color: var(--color2_4);
-  }
-
-  50% {
-    background-color: var(--color2_5);
-  }
-  60% {
-    background-color: var(--color2_6);
-  }
-  70% {
-    background-color: var(--color2_7);
-  }
-  to {
-    background-color: var(--color2_8);
-  }
-}
-
-.casilla33,
-.casilla42,
-.casilla51,
-.casilla60 {
-  animation: var(--aniDia);
-}
-
-@keyframes prueba {
-  from {
-    background-color: var(--color2_1);
-  }
-  20% {
-    background-color: var(--color2_2);
-  }
-
-  30% {
-    background-color: var(--color2_3);
-  }
-
-  40% {
-    background-color: var(--color2_4);
-  }
-
-  50% {
-    background-color: var(--color2_5);
-  }
-  60% {
-    background-color: var(--color2_6);
-  }
-  70% {
-    background-color: var(--color2_7);
-  }
-  to {
-    background-color: var(--color2_8);
-  }
-}
-
-.casilla41,
-.casilla50,
-.casilla59 {
-  animation: var(--aniDia);
-}
-
-@keyframes prueba {
-  from {
-    background-color: var(--color2_1);
-  }
-  20% {
-    background-color: var(--color2_2);
-  }
-
-  30% {
-    background-color: var(--color2_3);
-  }
-
-  40% {
-    background-color: var(--color2_4);
-  }
-
-  50% {
-    background-color: var(--color2_5);
-  }
-  60% {
-    background-color: var(--color2_6);
-  }
-  70% {
-    background-color: var(--color2_7);
-  }
-  to {
-    background-color: var(--color2_8);
-  }
-}
-
-.casilla49,
-.casilla58 {
-  animation: var(--aniDia);
-}
-
-@keyframes prueba {
-  from {
-    background-color: var(--color2_1);
-  }
-  20% {
-    background-color: var(--color2_2);
-  }
-
-  30% {
-    background-color: var(--color2_3);
-  }
-
-  40% {
-    background-color: var(--color2_4);
-  }
-
-  50% {
-    background-color: var(--color2_5);
-  }
-  60% {
-    background-color: var(--color2_6);
-  }
-  70% {
-    background-color: var(--color2_7);
-  }
-  to {
-    background-color: var(--color2_8);
-  }
-}
-
-.casilla57 {
-  animation: var(--aniDia);
-}
-
-@keyframes prueba {
-  from {
-    background-color: var(--color2_1);
-  }
-  20% {
-    background-color: var(--color2_2);
-  }
-
-  30% {
-    background-color: var(--color2_3);
-  }
-
-  40% {
-    background-color: var(--color2_4);
-  }
-
-  50% {
-    background-color: var(--color2_5);
-  }
-  60% {
-    background-color: var(--color2_6);
-  }
-  70% {
-    background-color: var(--color2_7);
-  }
-  to {
-    background-color: var(--color2_8);
   }
 }
