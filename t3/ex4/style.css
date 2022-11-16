@@ -5,9 +5,31 @@
 }
 
 :root {
+  --tiempo_anim1: 2s;
+  --tiempo_anim2: 15s;
+
   --color_texto: #5a0075;
   --color_borde: #dd0a85;
   --color_sombra: whitesmoke;
+
+  --color1_1: rgb(1, 21, 1);
+  --color1_2: rgb(45, 8, 96);
+  --color1_3: blue;
+  --color1_4: grey;
+  --color1_5: gold;
+  --color1_6: whitesmoke;
+  --color1_7: peru;
+  --color1_8: salmon;
+  --color1_9: darkred;
+
+  --color2_1: violet;
+  --color2_2: indigo;
+  --color2_3: blue;
+  --color2_4: green;
+  --color2_5: yellow;
+  --color2_6: orange;
+  --color2_7: red;
+  --color2_8: pink;
 }
 
 body {
@@ -59,4 +81,33 @@ h3 {
   border: 2px solid var(--color_texto);
   width: 100px;
   height: 100px;
+}
+
+/* ------------------------------------------------------ */
+
+.fila1 {
+  animation: prueba 10s ease infinite;
+}
+@keyframes prueba {
+  0% {
+    background-color: red;
+  }
+  20% {
+    background-color: darkmagenta;
+  }
+
+  40% {
+    background-color: darkslategray;
+  }
+
+  60% {
+    background-color: darkorange;
+  }
+
+  80% {
+    background-color: crimson;
+  }
+  100% {
+    background-color: darkblue;
+  }
 }
