@@ -51,7 +51,7 @@
   --delay14: calc(var(--delay1) * 14);
   --delay15: calc(var(--delay1) * 15);
 
-  /* animaciones */
+  /* animaciones cascada*/
 
   --aniCas1: cascada var(--tiempo_anim2) linear var(--delay1) 1 normal forwards;
   --aniCas2: cascada var(--tiempo_anim2) linear var(--delay2) 1 normal forwards;
