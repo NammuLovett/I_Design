@@ -6,7 +6,9 @@
 
 :root {
   --tiempo_anim1: 2s;
-  --tiempo_anim2: 15s;
+  --tiempo_anim2: 17s;
+  /* --aniCascada: prueba var(--tiempo_anim2) linear 2s 1 forwards; */
+  --aniDia: prueba var(--tiempo_anim2) linear 2s 1 forwards;
 
   --color_texto: #5a0075;
   --color_borde: #dd0a85;
@@ -14,22 +16,22 @@
 
   --color1_1: rgb(1, 21, 1);
   --color1_2: rgb(45, 8, 96);
-  --color1_3: blue;
-  --color1_4: grey;
-  --color1_5: gold;
-  --color1_6: whitesmoke;
-  --color1_7: peru;
-  --color1_8: salmon;
-  --color1_9: darkred;
+  --color1_3: rgb(209, 76, 186);
+  --color1_4: rgb(254, 183, 183);
+  --color1_5: rgb(239, 214, 75);
+  --color1_6: rgb(239, 239, 182);
+  --color1_7: rgb(248, 212, 244);
+  --color1_8: rgb(220, 118, 193);
+  --color1_9: rgb(255, 255, 255);
 
-  --color2_1: violet;
-  --color2_2: indigo;
-  --color2_3: blue;
-  --color2_4: green;
-  --color2_5: yellow;
-  --color2_6: orange;
-  --color2_7: red;
-  --color2_8: pink;
+  --color2_1: rgb(234, 62, 62);
+  --color2_2: rgb(247, 115, 0);
+  --color2_3: rgb(243, 220, 42);
+  --color2_4: rgb(93, 195, 65);
+  --color2_5: rgb(83, 87, 174);
+  --color2_6: rgb(163, 84, 161);
+  --color2_7: rgb(234, 161, 216);
+  --color2_8: rgb(235, 203, 203);
 }
 
 body {
@@ -86,28 +88,851 @@ h3 {
 /* ------------------------------------------------------ */
 
 .fila1 {
-  animation: prueba 10s ease infinite;
+  animation: var(--aniCascada);
 }
 @keyframes prueba {
-  0% {
-    background-color: red;
+  from {
+    background-color: var(--color1_1);
   }
   20% {
-    background-color: darkmagenta;
+    background-color: var(--color1_2);
+  }
+
+  30% {
+    background-color: var(--color1_3);
   }
 
   40% {
-    background-color: darkslategray;
+    background-color: var(--color1_4);
   }
 
+  50% {
+    background-color: var(--color1_5);
+  }
   60% {
-    background-color: darkorange;
+    background-color: var(--color1_6);
+  }
+  70% {
+    background-color: var(--color1_7);
+  }
+  80% {
+    background-color: var(--color1_8);
+  }
+  to {
+    background-color: var(--color1_9);
+  }
+}
+
+.fila2 {
+  animation: var(--aniCascada);
+}
+@keyframes prueba {
+  from {
+    background-color: var(--color1_1);
+  }
+  20% {
+    background-color: var(--color1_2);
   }
 
-  80% {
-    background-color: crimson;
+  30% {
+    background-color: var(--color1_3);
   }
-  100% {
-    background-color: darkblue;
+
+  40% {
+    background-color: var(--color1_4);
+  }
+
+  50% {
+    background-color: var(--color1_5);
+  }
+  60% {
+    background-color: var(--color1_6);
+  }
+  70% {
+    background-color: var(--color1_7);
+  }
+  80% {
+    background-color: var(--color1_8);
+  }
+  to {
+    background-color: var(--color1_9);
+  }
+}
+
+.fila3 {
+  animation: var(--aniCascada);
+}
+@keyframes prueba {
+  from {
+    background-color: var(--color1_1);
+  }
+  20% {
+    background-color: var(--color1_2);
+  }
+
+  30% {
+    background-color: var(--color1_3);
+  }
+
+  40% {
+    background-color: var(--color1_4);
+  }
+
+  50% {
+    background-color: var(--color1_5);
+  }
+  60% {
+    background-color: var(--color1_6);
+  }
+  70% {
+    background-color: var(--color1_7);
+  }
+  80% {
+    background-color: var(--color1_8);
+  }
+  to {
+    background-color: var(--color1_9);
+  }
+}
+
+.fila4 {
+  animation: var(--aniCascada);
+}
+@keyframes prueba {
+  from {
+    background-color: var(--color1_1);
+  }
+  20% {
+    background-color: var(--color1_2);
+  }
+
+  30% {
+    background-color: var(--color1_3);
+  }
+
+  40% {
+    background-color: var(--color1_4);
+  }
+
+  50% {
+    background-color: var(--color1_5);
+  }
+  60% {
+    background-color: var(--color1_6);
+  }
+  70% {
+    background-color: var(--color1_7);
+  }
+  80% {
+    background-color: var(--color1_8);
+  }
+  to {
+    background-color: var(--color1_9);
+  }
+}
+
+.fila5 {
+  animation: var(--aniCascada);
+}
+@keyframes prueba {
+  from {
+    background-color: var(--color1_1);
+  }
+  20% {
+    background-color: var(--color1_2);
+  }
+
+  30% {
+    background-color: var(--color1_3);
+  }
+
+  40% {
+    background-color: var(--color1_4);
+  }
+
+  50% {
+    background-color: var(--color1_5);
+  }
+  60% {
+    background-color: var(--color1_6);
+  }
+  70% {
+    background-color: var(--color1_7);
+  }
+  80% {
+    background-color: var(--color1_8);
+  }
+  to {
+    background-color: var(--color1_9);
+  }
+}
+
+.fila6 {
+  animation: var(--aniCascada);
+}
+@keyframes prueba {
+  from {
+    background-color: var(--color1_1);
+  }
+  20% {
+    background-color: var(--color1_2);
+  }
+
+  30% {
+    background-color: var(--color1_3);
+  }
+
+  40% {
+    background-color: var(--color1_4);
+  }
+
+  50% {
+    background-color: var(--color1_5);
+  }
+  60% {
+    background-color: var(--color1_6);
+  }
+  70% {
+    background-color: var(--color1_7);
+  }
+  80% {
+    background-color: var(--color1_8);
+  }
+  to {
+    background-color: var(--color1_9);
+  }
+}
+
+.fila7 {
+  animation: var(--aniCascada);
+}
+@keyframes prueba {
+  from {
+    background-color: var(--color1_1);
+  }
+  20% {
+    background-color: var(--color1_2);
+  }
+
+  30% {
+    background-color: var(--color1_3);
+  }
+
+  40% {
+    background-color: var(--color1_4);
+  }
+
+  50% {
+    background-color: var(--color1_5);
+  }
+  60% {
+    background-color: var(--color1_6);
+  }
+  70% {
+    background-color: var(--color1_7);
+  }
+  80% {
+    background-color: var(--color1_8);
+  }
+  to {
+    background-color: var(--color1_9);
+  }
+}
+
+.fila8 {
+  animation: var(--aniCascada);
+}
+@keyframes prueba {
+  from {
+    background-color: var(--color1_1);
+  }
+  20% {
+    background-color: var(--color1_2);
+  }
+
+  30% {
+    background-color: var(--color1_3);
+  }
+
+  40% {
+    background-color: var(--color1_4);
+  }
+
+  50% {
+    background-color: var(--color1_5);
+  }
+  60% {
+    background-color: var(--color1_6);
+  }
+  70% {
+    background-color: var(--color1_7);
+  }
+  80% {
+    background-color: var(--color1_8);
+  }
+  to {
+    background-color: var(--color1_9);
+  }
+}
+
+/* ----------------------------------------------- */
+.casilla8 {
+  animation: var(--aniDia);
+}
+
+@keyframes prueba {
+  from {
+    background-color: var(--color2_1);
+  }
+  20% {
+    background-color: var(--color2_2);
+  }
+
+  30% {
+    background-color: var(--color2_3);
+  }
+
+  40% {
+    background-color: var(--color2_4);
+  }
+
+  50% {
+    background-color: var(--color2_5);
+  }
+  60% {
+    background-color: var(--color2_6);
+  }
+  70% {
+    background-color: var(--color2_7);
+  }
+  to {
+    background-color: var(--color2_8);
+  }
+}
+
+.casilla7,
+.casilla16 {
+  animation: var(--aniDia);
+}
+
+@keyframes prueba {
+  from {
+    background-color: var(--color2_1);
+  }
+  20% {
+    background-color: var(--color2_2);
+  }
+
+  30% {
+    background-color: var(--color2_3);
+  }
+
+  40% {
+    background-color: var(--color2_4);
+  }
+
+  50% {
+    background-color: var(--color2_5);
+  }
+  60% {
+    background-color: var(--color2_6);
+  }
+  70% {
+    background-color: var(--color2_7);
+  }
+  to {
+    background-color: var(--color2_8);
+  }
+}
+
+.casilla6,
+.casilla15,
+.casilla24 {
+  animation: var(--aniDia);
+}
+
+@keyframes prueba {
+  from {
+    background-color: var(--color2_1);
+  }
+  20% {
+    background-color: var(--color2_2);
+  }
+
+  30% {
+    background-color: var(--color2_3);
+  }
+
+  40% {
+    background-color: var(--color2_4);
+  }
+
+  50% {
+    background-color: var(--color2_5);
+  }
+  60% {
+    background-color: var(--color2_6);
+  }
+  70% {
+    background-color: var(--color2_7);
+  }
+  to {
+    background-color: var(--color2_8);
+  }
+}
+
+.casilla5,
+.casilla14,
+.casilla23,
+.casilla32 {
+  animation: var(--aniDia);
+}
+
+@keyframes prueba {
+  from {
+    background-color: var(--color2_1);
+  }
+  20% {
+    background-color: var(--color2_2);
+  }
+
+  30% {
+    background-color: var(--color2_3);
+  }
+
+  40% {
+    background-color: var(--color2_4);
+  }
+
+  50% {
+    background-color: var(--color2_5);
+  }
+  60% {
+    background-color: var(--color2_6);
+  }
+  70% {
+    background-color: var(--color2_7);
+  }
+  to {
+    background-color: var(--color2_8);
+  }
+}
+
+.casilla4,
+.casilla13,
+.casilla22,
+.casilla31,
+.casilla40 {
+  animation: var(--aniDia);
+}
+
+@keyframes prueba {
+  from {
+    background-color: var(--color2_1);
+  }
+  20% {
+    background-color: var(--color2_2);
+  }
+
+  30% {
+    background-color: var(--color2_3);
+  }
+
+  40% {
+    background-color: var(--color2_4);
+  }
+
+  50% {
+    background-color: var(--color2_5);
+  }
+  60% {
+    background-color: var(--color2_6);
+  }
+  70% {
+    background-color: var(--color2_7);
+  }
+  to {
+    background-color: var(--color2_8);
+  }
+}
+
+.casilla3,
+.casilla12,
+.casilla21,
+.casilla30,
+.casilla39,
+.casilla48 {
+  animation: var(--aniDia);
+}
+
+@keyframes prueba {
+  from {
+    background-color: var(--color2_1);
+  }
+  20% {
+    background-color: var(--color2_2);
+  }
+
+  30% {
+    background-color: var(--color2_3);
+  }
+
+  40% {
+    background-color: var(--color2_4);
+  }
+
+  50% {
+    background-color: var(--color2_5);
+  }
+  60% {
+    background-color: var(--color2_6);
+  }
+  70% {
+    background-color: var(--color2_7);
+  }
+  to {
+    background-color: var(--color2_8);
+  }
+}
+
+.casilla2,
+.casilla11,
+.casilla20,
+.casilla29,
+.casilla38,
+.casilla47,
+.casilla56 {
+  animation: var(--aniDia);
+}
+
+@keyframes prueba {
+  from {
+    background-color: var(--color2_1);
+  }
+  20% {
+    background-color: var(--color2_2);
+  }
+
+  30% {
+    background-color: var(--color2_3);
+  }
+
+  40% {
+    background-color: var(--color2_4);
+  }
+
+  50% {
+    background-color: var(--color2_5);
+  }
+  60% {
+    background-color: var(--color2_6);
+  }
+  70% {
+    background-color: var(--color2_7);
+  }
+  to {
+    background-color: var(--color2_8);
+  }
+}
+
+.casilla1,
+.casilla10,
+.casilla19,
+.casilla28,
+.casilla37,
+.casilla46,
+.casilla55,
+.casilla64 {
+  animation: var(--aniDia);
+}
+
+@keyframes prueba {
+  from {
+    background-color: var(--color2_1);
+  }
+  20% {
+    background-color: var(--color2_2);
+  }
+
+  30% {
+    background-color: var(--color2_3);
+  }
+
+  40% {
+    background-color: var(--color2_4);
+  }
+
+  50% {
+    background-color: var(--color2_5);
+  }
+  60% {
+    background-color: var(--color2_6);
+  }
+  70% {
+    background-color: var(--color2_7);
+  }
+  to {
+    background-color: var(--color2_8);
+  }
+}
+
+.casilla9,
+.casilla8,
+.casilla18,
+.casilla28,
+.casilla27,
+.casilla36,
+.casilla45,
+.casilla54,
+.casilla63 {
+  animation: var(--aniDia);
+}
+
+@keyframes prueba {
+  from {
+    background-color: var(--color2_1);
+  }
+  20% {
+    background-color: var(--color2_2);
+  }
+
+  30% {
+    background-color: var(--color2_3);
+  }
+
+  40% {
+    background-color: var(--color2_4);
+  }
+
+  50% {
+    background-color: var(--color2_5);
+  }
+  60% {
+    background-color: var(--color2_6);
+  }
+  70% {
+    background-color: var(--color2_7);
+  }
+  to {
+    background-color: var(--color2_8);
+  }
+}
+
+.casilla17,
+.casilla26,
+.casilla35,
+.casilla44,
+.casilla53,
+.casilla62 {
+  animation: var(--aniDia);
+}
+
+@keyframes prueba {
+  from {
+    background-color: var(--color2_1);
+  }
+  20% {
+    background-color: var(--color2_2);
+  }
+
+  30% {
+    background-color: var(--color2_3);
+  }
+
+  40% {
+    background-color: var(--color2_4);
+  }
+
+  50% {
+    background-color: var(--color2_5);
+  }
+  60% {
+    background-color: var(--color2_6);
+  }
+  70% {
+    background-color: var(--color2_7);
+  }
+  to {
+    background-color: var(--color2_8);
+  }
+}
+
+.casilla25,
+.casilla34,
+.casilla43,
+.casilla52,
+.casilla61 {
+  animation: var(--aniDia);
+}
+
+@keyframes prueba {
+  from {
+    background-color: var(--color2_1);
+  }
+  20% {
+    background-color: var(--color2_2);
+  }
+
+  30% {
+    background-color: var(--color2_3);
+  }
+
+  40% {
+    background-color: var(--color2_4);
+  }
+
+  50% {
+    background-color: var(--color2_5);
+  }
+  60% {
+    background-color: var(--color2_6);
+  }
+  70% {
+    background-color: var(--color2_7);
+  }
+  to {
+    background-color: var(--color2_8);
+  }
+}
+
+.casilla33,
+.casilla42,
+.casilla51,
+.casilla60 {
+  animation: var(--aniDia);
+}
+
+@keyframes prueba {
+  from {
+    background-color: var(--color2_1);
+  }
+  20% {
+    background-color: var(--color2_2);
+  }
+
+  30% {
+    background-color: var(--color2_3);
+  }
+
+  40% {
+    background-color: var(--color2_4);
+  }
+
+  50% {
+    background-color: var(--color2_5);
+  }
+  60% {
+    background-color: var(--color2_6);
+  }
+  70% {
+    background-color: var(--color2_7);
+  }
+  to {
+    background-color: var(--color2_8);
+  }
+}
+
+.casilla41,
+.casilla50,
+.casilla59 {
+  animation: var(--aniDia);
+}
+
+@keyframes prueba {
+  from {
+    background-color: var(--color2_1);
+  }
+  20% {
+    background-color: var(--color2_2);
+  }
+
+  30% {
+    background-color: var(--color2_3);
+  }
+
+  40% {
+    background-color: var(--color2_4);
+  }
+
+  50% {
+    background-color: var(--color2_5);
+  }
+  60% {
+    background-color: var(--color2_6);
+  }
+  70% {
+    background-color: var(--color2_7);
+  }
+  to {
+    background-color: var(--color2_8);
+  }
+}
+
+.casilla49,
+.casilla58 {
+  animation: var(--aniDia);
+}
+
+@keyframes prueba {
+  from {
+    background-color: var(--color2_1);
+  }
+  20% {
+    background-color: var(--color2_2);
+  }
+
+  30% {
+    background-color: var(--color2_3);
+  }
+
+  40% {
+    background-color: var(--color2_4);
+  }
+
+  50% {
+    background-color: var(--color2_5);
+  }
+  60% {
+    background-color: var(--color2_6);
+  }
+  70% {
+    background-color: var(--color2_7);
+  }
+  to {
+    background-color: var(--color2_8);
+  }
+}
+
+.casilla57 {
+  animation: var(--aniDia);
+}
+
+@keyframes prueba {
+  from {
+    background-color: var(--color2_1);
+  }
+  20% {
+    background-color: var(--color2_2);
+  }
+
+  30% {
+    background-color: var(--color2_3);
+  }
+
+  40% {
+    background-color: var(--color2_4);
+  }
+
+  50% {
+    background-color: var(--color2_5);
+  }
+  60% {
+    background-color: var(--color2_6);
+  }
+  70% {
+    background-color: var(--color2_7);
+  }
+  to {
+    background-color: var(--color2_8);
   }
 }
