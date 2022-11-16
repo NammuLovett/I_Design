@@ -33,7 +33,7 @@
   /* tiempo y delay */
 
   --tiempo_anim1: 2s;
-  --tiempo_anim2: 17s;
+  --tiempo_anim2: 20s;
 
   --delay1: 750ms;
   --delay2: calc(var(--delay1) * 2);
