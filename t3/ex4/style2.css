@@ -5,54 +5,7 @@
 }
 
 :root {
-  --tiempo_anim1: 2s;
-  --tiempo_anim2: 17s;
-
-  /* delay */
-  --delay1: 500ms;
-  --delay2: var(--delay) * 2;
-  --delay3: var(--delay) * 3;
-  --delay4: var(--delay) * 4;
-  --delay5: var(--delay) * 5;
-  --delay6: var(--delay) * 6;
-  --delay7: var(--delay) * 7;
-  --delay8: var(--delay) * 8;
-  --delay9: var(--delay) * 9;
-  --delay10: var(--delay) * 10;
-  --delay11: var(--delay) * 11;
-  --delay12: var(--delay) * 12;
-  --delay13: var(--delay) * 13;
-  --delay14: var(--delay) * 14;
-  --delay15: var(--delay) * 15;
-
-  /* animation: name duration timing-function delay iteration-count direction
-  fill-mode; */
-
-  --aniDia1: diagonal var(--tiempo_anim2) linear var(--delay1) 1 normal forwards;
-  --aniDia2: diagonal var(--tiempo_anim2) linear var(--delay2) 1 normal forwards;
-  --aniDia3: diagonal var(--tiempo_anim2) linear var(--delay3) 1 normal forwards;
-  --aniDia4: diagonal var(--tiempo_anim2) linear var(--delay4) 1 normal forwards;
-  --aniDia5: diagonal var(--tiempo_anim2) linear var(--delay5) 1 normal forwards;
-  --aniDia6: diagonal var(--tiempo_anim2) linear var(--delay6) 1 normal forwards;
-  --aniDia7: diagonal var(--tiempo_anim2) linear var(--delay7) 1 normal forwards;
-  --aniDia8: diagonal var(--tiempo_anim2) linear var(--delay8) 1 normal forwards;
-  --aniDia8: diagonal var(--tiempo_anim2) linear var(--delay9) 1 normal forwards;
-  --aniDia8: diagonal var(--tiempo_anim2) linear var(--delay10) 1 normal
-    forwards;
-  --aniDia8: diagonal var(--tiempo_anim2) linear var(--delay11) 1 normal
-    forwards;
-  --aniDia8: diagonal var(--tiempo_anim2) linear var(--delay12) 1 normal
-    forwards;
-  --aniDia8: diagonal var(--tiempo_anim2) linear var(--delay13) 1 normal
-    forwards;
-  --aniDia8: diagonal var(--tiempo_anim2) linear var(--delay14) 1 normal
-    forwards;
-  --aniDia8: diagonal var(--tiempo_anim2) linear var(--delay15) 1 normal
-    forwards;
-
-  /* ----------------------------------------------------------- */
-
-  /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+  /* colores */
 
   --color_texto: #5a0075;
   --color_borde: #dd0a85;
@@ -76,7 +29,76 @@
   --color2_6: rgb(163, 84, 161);
   --color2_7: rgb(234, 161, 216);
   --color2_8: rgb(235, 203, 203);
+
+  /* tiempo y delay */
+
+  --tiempo_anim1: 2s;
+  --tiempo_anim2: 20s;
+
+  --delay1: 500ms;
+  --delay2: calc(var(--delay1) * 2);
+  --delay3: calc(var(--delay1) * 3);
+  --delay4: calc(var(--delay1) * 4);
+  --delay5: calc(var(--delay1) * 5);
+  --delay6: calc(var(--delay1) * 6);
+  --delay7: calc(var(--delay1) * 7);
+  --delay8: calc(var(--delay1) * 8);
+  --delay9: calc(var(--delay1) * 9);
+  --delay10: calc(var(--delay1) * 10);
+  --delay11: calc(var(--delay1) * 11);
+  --delay12: calc(var(--delay1) * 12);
+  --delay13: calc(var(--delay1) * 13);
+  --delay14: calc(var(--delay1) * 14);
+  --delay15: calc(var(--delay1) * 15);
+
+  /* animaciones cascada*/
+
+  --aniCas1: cascada var(--tiempo_anim2) linear var(--delay1) 1 normal forwards;
+  --aniCas2: cascada var(--tiempo_anim2) linear var(--delay2) 1 normal forwards;
+  --aniCas3: cascada var(--tiempo_anim2) linear var(--delay3) 1 normal forwards;
+  --aniCas4: cascada var(--tiempo_anim2) linear var(--delay4) 1 normal forwards;
+  --aniCas5: cascada var(--tiempo_anim2) linear var(--delay5) 1 normal forwards;
+  --aniCas6: cascada var(--tiempo_anim2) linear var(--delay6) 1 normal forwards;
+  --aniCas7: cascada var(--tiempo_anim2) linear var(--delay7) 1 normal forwards;
+  --aniCas8: cascada var(--tiempo_anim2) linear var(--delay8) 1 normal forwards;
+
+  /* animacion diagonal */
+  /* 
+  --aniDia1: diagonal var(--tiempo_anim2) linear var(--delay1) infinite normal
+    forwards;
+  --aniDia2: diagonal var(--tiempo_anim2) linear var(--delay2) infinite normal
+    forwards;
+  --aniDia3: diagonal var(--tiempo_anim2) linear var(--delay3) infinite normal
+    forwards;
+  --aniDia4: diagonal var(--tiempo_anim2) linear var(--delay4) infinite normal
+    forwards;
+  --aniDia5: diagonal var(--tiempo_anim2) linear var(--delay5) infinite normal
+    forwards;
+  --aniDia6: diagonal var(--tiempo_anim2) linear var(--delay6) infinite normal
+    forwards;
+  --aniDia7: diagonal var(--tiempo_anim2) linear var(--delay7) infinite normal
+    forwards;
+  --aniDia8: diagonal var(--tiempo_anim2) linear var(--delay8) infinite normal
+    forwards;
+  --aniDia9: diagonal var(--tiempo_anim2) linear var(--delay9) infinite normal
+    forwards;
+  --aniDia10: diagonal var(--tiempo_anim2) linear var(--delay10) infinite normal
+    forwards;
+  --aniDia11: diagonal var(--tiempo_anim2) linear var(--delay11) infinite normal
+    forwards;
+  --aniDia12: diagonal var(--tiempo_anim2) linear var(--delay12) infinite normal
+    forwards;
+  --aniDia13: diagonal var(--tiempo_anim2) linear var(--delay13) infinite normal
+    forwards;
+  --aniDia14: diagonal var(--tiempo_anim2) linear var(--delay14) infinite normal
+    forwards;
+  --aniDia15: diagonal var(--tiempo_anim2) linear var(--delay15) infinite normal
+    forwards;
+
+     */
 }
+
+/* ----------------------------------------------------------------------- */
 
 body {
   background-color: var(--color_texto);
@@ -129,17 +151,12 @@ h3 {
   height: 100px;
 }
 
-/* ------------------------------------------------------ */
-
+/* ----------------------------------------------------------------------- */
 .fila1 {
-  animation-name: pepe;
-  animation-timing-function: linear;
-  animation-duration: 20s;
-  animation-delay: 2s;
-  animation-fill-mode: forwards;
+  animation: var(--aniCas1);
 }
 
-@keyframes pepe {
+@keyframes cascada {
   from {
     background-color: var(--color1_1);
   }
@@ -173,8 +190,9 @@ h3 {
 }
 
 .fila2 {
-  animation: var(--aniCascada2);
+  animation: var(--aniCas2);
 }
+
 @keyframes cascada {
   from {
     background-color: var(--color1_1);
@@ -209,8 +227,9 @@ h3 {
 }
 
 .fila3 {
-  animation: var(--aniCascada3);
+  animation: var(--aniCas3);
 }
+
 @keyframes cascada {
   from {
     background-color: var(--color1_1);
@@ -245,8 +264,9 @@ h3 {
 }
 
 .fila4 {
-  animation: var(--aniCascada4);
+  animation: var(--aniCas4);
 }
+
 @keyframes cascada {
   from {
     background-color: var(--color1_1);
@@ -281,8 +301,9 @@ h3 {
 }
 
 .fila5 {
-  animation: var(--aniCascada5);
+  animation: var(--aniCas5);
 }
+
 @keyframes cascada {
   from {
     background-color: var(--color1_1);
@@ -317,8 +338,9 @@ h3 {
 }
 
 .fila6 {
-  animation: var(--aniCascada6);
+  animation: var(--aniCas6);
 }
+
 @keyframes cascada {
   from {
     background-color: var(--color1_1);
@@ -353,8 +375,9 @@ h3 {
 }
 
 .fila7 {
-  animation: var(--aniCascada7);
+  animation: var(--aniCas7);
 }
+
 @keyframes cascada {
   from {
     background-color: var(--color1_1);
@@ -389,8 +412,9 @@ h3 {
 }
 
 .fila8 {
-  animation: var(--aniCascada8);
+  animation: var(--aniCas8);
 }
+
 @keyframes cascada {
   from {
     background-color: var(--color1_1);
@@ -423,6 +447,8 @@ h3 {
     background-color: var(--color1_9);
   }
 }
+
+/* ------------------------------------------------------------------ */
 
 /* ----------------------------------------------- */
 
@@ -727,9 +753,7 @@ h3 {
 }
 
 .casilla9,
-.casilla8,
 .casilla18,
-.casilla28,
 .casilla27,
 .casilla36,
 .casilla45,
