@@ -62,26 +62,35 @@
   --aniCas7: cascada var(--tiempo_anim2) linear var(--delay7) 1 normal forwards;
   --aniCas8: cascada var(--tiempo_anim2) linear var(--delay8) 1 normal forwards; */
 
-  --aniDia1: diagonal var(--tiempo_anim2) linear var(--delay1) 1 normal forwards;
-  --aniDia2: diagonal var(--tiempo_anim2) linear var(--delay2) 1 normal forwards;
-  --aniDia3: diagonal var(--tiempo_anim2) linear var(--delay3) 1 normal forwards;
-  --aniDia4: diagonal var(--tiempo_anim2) linear var(--delay4) 1 normal forwards;
-  --aniDia5: diagonal var(--tiempo_anim2) linear var(--delay5) 1 normal forwards;
-  --aniDia6: diagonal var(--tiempo_anim2) linear var(--delay6) 1 normal forwards;
-  --aniDia7: diagonal var(--tiempo_anim2) linear var(--delay7) 1 normal forwards;
-  --aniDia8: diagonal var(--tiempo_anim2) linear var(--delay8) 1 normal forwards;
-  --aniDia9: diagonal var(--tiempo_anim2) linear var(--delay9) 1 normal forwards;
-  --aniDia10: diagonal var(--tiempo_anim2) linear var(--delay10) 1 normal
+  --aniDia1: diagonal var(--tiempo_anim2) linear var(--delay1) infinite normal
     forwards;
-  --aniDia11: diagonal var(--tiempo_anim2) linear var(--delay11) 1 normal
+  --aniDia2: diagonal var(--tiempo_anim2) linear var(--delay2) infinite normal
     forwards;
-  --aniDia12: diagonal var(--tiempo_anim2) linear var(--delay12) 1 normal
+  --aniDia3: diagonal var(--tiempo_anim2) linear var(--delay3) infinite normal
     forwards;
-  --aniDia13: diagonal var(--tiempo_anim2) linear var(--delay13) 1 normal
+  --aniDia4: diagonal var(--tiempo_anim2) linear var(--delay4) infinite normal
     forwards;
-  --aniDia14: diagonal var(--tiempo_anim2) linear var(--delay14) 1 normal
+  --aniDia5: diagonal var(--tiempo_anim2) linear var(--delay5) infinite normal
     forwards;
-  --aniDia15: diagonal var(--tiempo_anim2) linear var(--delay15) 1 normal
+  --aniDia6: diagonal var(--tiempo_anim2) linear var(--delay6) infinite normal
+    forwards;
+  --aniDia7: diagonal var(--tiempo_anim2) linear var(--delay7) infinite normal
+    forwards;
+  --aniDia8: diagonal var(--tiempo_anim2) linear var(--delay8) infinite normal
+    forwards;
+  --aniDia9: diagonal var(--tiempo_anim2) linear var(--delay9) infinite normal
+    forwards;
+  --aniDia10: diagonal var(--tiempo_anim2) linear var(--delay10) infinite normal
+    forwards;
+  --aniDia11: diagonal var(--tiempo_anim2) linear var(--delay11) infinite normal
+    forwards;
+  --aniDia12: diagonal var(--tiempo_anim2) linear var(--delay12) infinite normal
+    forwards;
+  --aniDia13: diagonal var(--tiempo_anim2) linear var(--delay13) infinite normal
+    forwards;
+  --aniDia14: diagonal var(--tiempo_anim2) linear var(--delay14) infinite normal
+    forwards;
+  --aniDia15: diagonal var(--tiempo_anim2) linear var(--delay15) infinite normal
     forwards;
 }
 
@@ -740,9 +749,7 @@ h3 {
 }
 
 .casilla9,
-.casilla8,
 .casilla18,
-.casilla28,
 .casilla27,
 .casilla36,
 .casilla45,
