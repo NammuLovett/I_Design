@@ -51,6 +51,22 @@
   --delay14: calc(var(--delay1) * 14);
   --delay15: calc(var(--delay1) * 15);
 
+  --delayb1: 25s;
+  --delayb2: calc(var(--delayb1) + 2s);
+  --delayb3: calc(var(--delayb1) + 3s);
+  --delayb4: calc(var(--delayb1) + 4s);
+  --delayb5: calc(var(--delayb1) + 5s);
+  --delayb6: calc(var(--delayb1) + 6s);
+  --delayb7: calc(var(--delayb1) + 7s);
+  --delayb8: calc(var(--delayb1) + 8s);
+  --delayb9: calc(var(--delayb1) + 9s);
+  --delayb10: calc(var(--delayb1) + 10s);
+  --delayb11: calc(var(--delayb1) + 11s);
+  --delayb12: calc(var(--delayb1) + 12s);
+  --delayb13: calc(var(--delayb1) + 13s);
+  --delayb14: calc(var(--delayb1) + 14s);
+  --delayb15: calc(var(--delayb1) + 15s);
+
   /* animaciones cascada*/
 
   --aniCas1: cascada var(--tiempo_anim2) linear var(--delay1) 1 normal forwards;
@@ -62,26 +78,35 @@
   --aniCas7: cascada var(--tiempo_anim2) linear var(--delay7) 1 normal forwards;
   --aniCas8: cascada var(--tiempo_anim2) linear var(--delay8) 1 normal forwards;
 
-  --aniDia1: diagonal var(--tiempo_anim2) linear var(--delay1) 1 normal forwards;
-  --aniDia2: diagonal var(--tiempo_anim2) linear var(--delay2) 1 normal forwards;
-  --aniDia3: diagonal var(--tiempo_anim2) linear var(--delay3) 1 normal forwards;
-  --aniDia4: diagonal var(--tiempo_anim2) linear var(--delay4) 1 normal forwards;
-  --aniDia5: diagonal var(--tiempo_anim2) linear var(--delay5) 1 normal forwards;
-  --aniDia6: diagonal var(--tiempo_anim2) linear var(--delay6) 1 normal forwards;
-  --aniDia7: diagonal var(--tiempo_anim2) linear var(--delay7) 1 normal forwards;
-  --aniDia8: diagonal var(--tiempo_anim2) linear var(--delay8) 1 normal forwards;
-  --aniDia9: diagonal var(--tiempo_anim2) linear var(--delay9) 1 normal forwards;
-  --aniDia10: diagonal var(--tiempo_anim2) linear var(--delay10) 1 normal
+  --aniDia1: diagonal var(--tiempo_anim2) linear var(--delayb1) 1 normal
     forwards;
-  --aniDia11: diagonal var(--tiempo_anim2) linear var(--delay11) 1 normal
+  --aniDia2: diagonal var(--tiempo_anim2) linear var(--delayb2) 1 normal
     forwards;
-  --aniDia12: diagonal var(--tiempo_anim2) linear var(--delay12) 1 normal
+  --aniDia3: diagonal var(--tiempo_anim2) linear var(--delayb3) 1 normal
     forwards;
-  --aniDia13: diagonal var(--tiempo_anim2) linear var(--delay13) 1 normal
+  --aniDia4: diagonal var(--tiempo_anim2) linear var(--delayb4) 1 normal
     forwards;
-  --aniDia14: diagonal var(--tiempo_anim2) linear var(--delay14) 1 normal
+  --aniDia5: diagonal var(--tiempo_anim2) linear var(--delayb5) 1 normal
     forwards;
-  --aniDia15: diagonal var(--tiempo_anim2) linear var(--delay15) 1 normal
+  --aniDia6: diagonal var(--tiempo_anim2) linear var(--delayb6) 1 normal
+    forwards;
+  --aniDia7: diagonal var(--tiempo_anim2) linear var(--delayb7) 1 normal
+    forwards;
+  --aniDia8: diagonal var(--tiempo_anim2) linear var(--delayb8) 1 normal
+    forwards;
+  --aniDia9: diagonal var(--tiempo_anim2) linear var(--delayb9) 1 normal
+    forwards;
+  --aniDia10: diagonal var(--tiempo_anim2) linear var(--delayb10) 1 normal
+    forwards;
+  --aniDia11: diagonal var(--tiempo_anim2) linear var(--delayb11) 1 normal
+    forwards;
+  --aniDia12: diagonal var(--tiempo_anim2) linear var(--delayb12) 1 normal
+    forwards;
+  --aniDia13: diagonal var(--tiempo_anim2) linear var(--delayb13) 1 normal
+    forwards;
+  --aniDia14: diagonal var(--tiempo_anim2) linear var(--delayb14) 1 normal
+    forwards;
+  --aniDia15: diagonal var(--tiempo_anim2) linear var(--delayb15) 1 normal
     forwards;
 }
 
@@ -437,8 +462,7 @@ h3 {
 
 /* ------------------------------------------------------------------ */
 
-/* 
-.casilla8 {
+.d1 {
   animation: var(--aniDia1);
 }
 
@@ -472,8 +496,7 @@ h3 {
   }
 }
 
-.casilla7,
-.casilla16 {
+.d2 {
   animation: var(--aniDia2);
 }
 
@@ -507,9 +530,7 @@ h3 {
   }
 }
 
-.casilla6,
-.casilla15,
-.casilla24 {
+.d3 {
   animation: var(--aniDia3);
 }
 
@@ -543,10 +564,7 @@ h3 {
   }
 }
 
-.casilla5,
-.casilla14,
-.casilla23,
-.casilla32 {
+.d4 {
   animation: var(--aniDia4);
 }
 
@@ -580,11 +598,7 @@ h3 {
   }
 }
 
-.casilla4,
-.casilla13,
-.casilla22,
-.casilla31,
-.casilla40 {
+.d5 {
   animation: var(--aniDia5);
 }
 
@@ -618,12 +632,7 @@ h3 {
   }
 }
 
-.casilla3,
-.casilla12,
-.casilla21,
-.casilla30,
-.casilla39,
-.casilla48 {
+.d6 {
   animation: var(--aniDia6);
 }
 
@@ -657,13 +666,7 @@ h3 {
   }
 }
 
-.casilla2,
-.casilla11,
-.casilla20,
-.casilla29,
-.casilla38,
-.casilla47,
-.casilla56 {
+.d7 {
   animation: var(--aniDia7);
 }
 
@@ -697,14 +700,7 @@ h3 {
   }
 }
 
-.casilla1,
-.casilla10,
-.casilla19,
-.casilla28,
-.casilla37,
-.casilla46,
-.casilla55,
-.casilla64 {
+.d8 {
   animation: var(--aniDia8);
 }
 
@@ -738,15 +734,7 @@ h3 {
   }
 }
 
-.casilla9,
-.casilla8,
-.casilla18,
-.casilla28,
-.casilla27,
-.casilla36,
-.casilla45,
-.casilla54,
-.casilla63 {
+.d9 {
   animation: var(--aniDia9);
 }
 
@@ -780,12 +768,7 @@ h3 {
   }
 }
 
-.casilla17,
-.casilla26,
-.casilla35,
-.casilla44,
-.casilla53,
-.casilla62 {
+.d10 {
   animation: var(--aniDia10);
 }
 
@@ -819,11 +802,7 @@ h3 {
   }
 }
 
-.casilla25,
-.casilla34,
-.casilla43,
-.casilla52,
-.casilla61 {
+.d11 {
   animation: var(--aniDia11);
 }
 
@@ -857,10 +836,7 @@ h3 {
   }
 }
 
-.casilla33,
-.casilla42,
-.casilla51,
-.casilla60 {
+.d12 {
   animation: var(--aniDia12);
 }
 
@@ -894,9 +870,7 @@ h3 {
   }
 }
 
-.casilla41,
-.casilla50,
-.casilla59 {
+.d13 {
   animation: var(--aniDia13);
 }
 
@@ -930,8 +904,7 @@ h3 {
   }
 }
 
-.casilla49,
-.casilla58 {
+.d14 {
   animation: var(--aniDia14);
 }
 
@@ -965,7 +938,7 @@ h3 {
   }
 }
 
-.casilla57 {
+.d15 {
   animation: var(--aniDia15);
 }
 
@@ -998,6 +971,3 @@ h3 {
     background-color: var(--color2_8);
   }
 }
-
-
-*/
