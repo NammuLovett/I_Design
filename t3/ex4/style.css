@@ -33,9 +33,10 @@
   /* tiempo y delay */
 
   --tiempo_anim1: 2s;
+  iempo_anim1: 2s;
   --tiempo_anim2: 20s;
 
-  --delay1: 500ms;
+  --delay1: 0ms;
   --delay2: calc(var(--delay1) * 2);
   --delay3: calc(var(--delay1) * 3);
   --delay4: calc(var(--delay1) * 4);
@@ -43,13 +44,6 @@
   --delay6: calc(var(--delay1) * 6);
   --delay7: calc(var(--delay1) * 7);
   --delay8: calc(var(--delay1) * 8);
-  --delay9: calc(var(--delay1) * 9);
-  --delay10: calc(var(--delay1) * 10);
-  --delay11: calc(var(--delay1) * 11);
-  --delay12: calc(var(--delay1) * 12);
-  --delay13: calc(var(--delay1) * 13);
-  --delay14: calc(var(--delay1) * 14);
-  --delay15: calc(var(--delay1) * 15);
 
   --delayb1: 25s;
   --delayb2: calc(var(--delayb1) + 500ms);
@@ -241,28 +235,28 @@ h3 {
     background-color: var(--color1_9);
   }
 
-  20% {
+  10% {
     background-color: var(--color2_1);
   }
-  30% {
+  20% {
     background-color: var(--color2_2);
   }
 
-  40% {
+  30% {
     background-color: var(--color2_3);
   }
 
-  50% {
+  40% {
     background-color: var(--color2_4);
   }
 
-  60% {
+  50% {
     background-color: var(--color2_5);
   }
-  70% {
+  60% {
     background-color: var(--color2_6);
   }
-  80% {
+  70% {
     background-color: var(--color2_7);
   }
   90% {
