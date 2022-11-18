@@ -241,28 +241,28 @@ h3 {
     background-color: var(--color1_9);
   }
 
-  10% {
+  20% {
     background-color: var(--color2_1);
   }
-  20% {
+  30% {
     background-color: var(--color2_2);
   }
 
-  30% {
+  40% {
     background-color: var(--color2_3);
   }
 
-  40% {
+  50% {
     background-color: var(--color2_4);
   }
 
-  50% {
+  60% {
     background-color: var(--color2_5);
   }
-  60% {
+  70% {
     background-color: var(--color2_6);
   }
-  70% {
+  80% {
     background-color: var(--color2_7);
   }
   90% {
