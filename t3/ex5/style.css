@@ -1,0 +1,46 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  color: purple;
+  text-align: center;
+  font-family: 'Russo One';
+}
+p {
+  font-family: 'Voces';
+}
+
+strong {
+  color: #610a47;
+}
+
+recuadro {
+  font-family: 'jetbrainMono';
+}
+
+body {
+  background-color: #a9c9ff;
+  background-image: url(./img/gplay.png),
+    linear-gradient(180deg, #a9c9ff 0%, #ffbbec 100%);
+}
+header {
+  background-color: ghostwhite;
+  max-width: 180vh;
+  border-radius: 10px;
+}
+
+:link {
+  color: palevioletred;
+}
+
+:visited {
+  color: rgb(153, 26, 68);
+}
+
+img {
+  border: purple solid 6px;
+  border-radius: 10px;
+}
