@@ -25,13 +25,14 @@ body {
   background-color: #a9c9ff;
   background-image: url(./img/gplay.png),
     linear-gradient(180deg, #a9c9ff 0%, #ffbbec 100%);
+  width: 100vw;
 }
-header {
+.s1 {
   background-color: ghostwhite;
-  max-width: 180vh;
   border-radius: 10px;
+  width: 60%;
 }
-header p {
+.s1 p {
   color: #a3277e;
 }
 :link {
