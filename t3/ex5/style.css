@@ -138,7 +138,7 @@ div .s2wchamp {
   color: #f7c1e2;
 }
 
-div .s2wchamp ul {
+.s2wchamp ul {
   font-family: 'JetBrains mono';
   color: #8b008b;
   font-weight: 100;
@@ -151,7 +151,9 @@ div .s2wchamp ul {
   font-weight: bold;
 }
 
-div .s2wchamp p {
+/* section2 champ */
+
+.s2wchamp p {
   color: #fff;
   border-radius: 1vw;
   text-align: center;
@@ -161,7 +163,7 @@ div .s2wchamp p {
   font-size: 1vw;
   line-height: 2vw;
 }
-div .s2wchamp iframe {
+.s2wchamp iframe {
   width: 50vw;
   height: 25vw;
   margin-bottom: 2vw;
