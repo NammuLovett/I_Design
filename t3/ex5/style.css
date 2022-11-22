@@ -73,6 +73,14 @@ img {
 :visited {
   color: rgb(153, 26, 68);
 }
+a {
+  transition: none;
+}
+a:hover {
+  transition: all 2s;
+  text-shadow: 1px 1px 5px black;
+  letter-spacing: 0.2vw;
+}
 
 .list {
   font-family: 'jetbrainMono';
@@ -92,6 +100,7 @@ img {
 div .s2hist {
   background-color: rgb(192, 41, 192);
 }
+
 div .s2hist p {
   color: #fff;
   border-radius: 1vw;
@@ -107,13 +116,28 @@ div .s2wchamp {
   background-color: rgb(192, 41, 192);
 }
 
-div .list {
+/* lista */
+
+.list {
   text-align: left;
   border: 0.7vw solid #f468b4;
   padding: 0.5vw;
   margin: 0 7vw 0 7vw;
-  background-color: #f7b0dc;
+  background-color: #f7c1e2;
+  transition: background-color 2s;
 }
+
+.list ul {
+  transition: color 2s;
+}
+
+.list:hover {
+  background-color: #8b008b;
+}
+.list:hover ul {
+  color: #f7c1e2;
+}
+
 div .s2wchamp ul {
   font-family: 'JetBrains mono';
   color: #8b008b;
@@ -163,4 +187,24 @@ footer p {
   text-align: center;
   margin: 1.5vw;
   font-weight: bold;
+}
+
+span:hover {
+  transition: color 1s;
+  color: white;
+}
+
+span.ei {
+  transition: color 1s;
+}
+span.ei:hover {
+  color: white;
+}
+a {
+  transition: none;
+}
+a:hover {
+  transition: all 2s;
+  text-shadow: 1px 1px 5px black;
+  letter-spacing: 0.2vw;
 }
