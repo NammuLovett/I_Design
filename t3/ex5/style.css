@@ -34,7 +34,6 @@ body {
   background-color: #a9c9ff;
   background-image: url(./img/gplay.png),
     linear-gradient(180deg, #a9c9ff 0%, #ffbbec 100%);
-  width: 100vw;
   background-attachment: fixed;
   font-family: 'Voces';
 }
@@ -157,7 +156,7 @@ footer {
   border-top: 0.5vw solid white;
   background-color: #7c7979;
   border-bottom: 0.5vw solid white;
-  margin: 1vw 0 1vw 0;
+  margin: auto;
 }
 
 footer p {
