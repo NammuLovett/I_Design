@@ -1,0 +1,59 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+html,
+body {
+  font-family: 'Sono', sans-serif;
+  background-color: burlywood;
+}
+
+h1 {
+  text-align: center;
+  font-size: 2.5em;
+}
+.contenedor {
+  width: 80vw;
+  height: 96vh;
+  background-color: darkorange;
+  border: 5px solid black;
+  margin: 2vh auto;
+  padding: 20px;
+  overflow: hidden;
+}
+
+p {
+  font-size: 2em;
+}
+
+.c1,
+.c2,
+.c3 {
+  margin: 10px;
+  border: 5px solid black;
+  padding: 30px;
+}
+
+/* cajas */
+
+.c1 {
+  width: 30%;
+  height: 50%;
+  background-color: rgb(144, 127, 255);
+  float: left;
+}
+
+.c2 {
+  width: 30%;
+  height: 40%;
+  background-color: rgb(200, 255, 127);
+  float: left;
+  clear: both;
+}
+.c3 {
+  width: 20%;
+  height: 25%;
+  background-color: rgb(255, 127, 146);
+  float: left;
+}
