@@ -34,7 +34,6 @@ body {
   background-color: #a9c9ff;
   background-image: url(./img/gplay.png),
     linear-gradient(180deg, #a9c9ff 0%, #ffbbec 100%);
-  width: 100vw;
   background-attachment: fixed;
   font-family: 'Voces';
 }
@@ -45,6 +44,7 @@ body {
   border-radius: 10px;
   width: 75%;
   margin: auto;
+  margin-top: 10px;
   padding-top: 1vh;
 }
 
@@ -74,6 +74,14 @@ img {
 :visited {
   color: rgb(153, 26, 68);
 }
+a {
+  transition: none;
+}
+a:hover {
+  transition: all 2s;
+  text-shadow: 1px 1px 5px black;
+  letter-spacing: 0.2vw;
+}
 
 .list {
   font-family: 'jetbrainMono';
@@ -93,6 +101,7 @@ img {
 div .s2hist {
   background-color: rgb(192, 41, 192);
 }
+
 div .s2hist p {
   color: #fff;
   border-radius: 1vw;
@@ -108,14 +117,29 @@ div .s2wchamp {
   background-color: rgb(192, 41, 192);
 }
 
-div .list {
+/* lista */
+
+.list {
   text-align: left;
   border: 0.7vw solid #f468b4;
   padding: 0.5vw;
   margin: 0 7vw 0 7vw;
-  background-color: #f7b0dc;
+  background-color: #f7c1e2;
+  transition: background-color 2s;
 }
-div .s2wchamp ul {
+
+.list ul {
+  transition: color 2s;
+}
+
+.list:hover {
+  background-color: #8b008b;
+}
+.list:hover ul {
+  color: #f7c1e2;
+}
+
+.s2wchamp ul {
   font-family: 'JetBrains mono';
   color: #8b008b;
   font-weight: 100;
@@ -128,7 +152,9 @@ div .s2wchamp ul {
   font-weight: bold;
 }
 
-div .s2wchamp p {
+/* section2 champ */
+
+.s2wchamp p {
   color: #fff;
   border-radius: 1vw;
   text-align: center;
@@ -138,7 +164,7 @@ div .s2wchamp p {
   font-size: 1vw;
   line-height: 2vw;
 }
-div .s2wchamp iframe {
+.s2wchamp iframe {
   width: 50vw;
   height: 25vw;
   margin-bottom: 2vw;
@@ -157,11 +183,32 @@ footer {
   border-top: 0.5vw solid white;
   background-color: #7c7979;
   border-bottom: 0.5vw solid white;
-  margin: 1vw 0 1vw 0;
+  margin: auto;
+  margin-top: 10px;
 }
 
 footer p {
   text-align: center;
   margin: 1.5vw;
   font-weight: bold;
+}
+
+span:hover {
+  transition: color 1s;
+  color: white;
+}
+
+span.ei {
+  transition: color 1s;
+}
+span.ei:hover {
+  color: white;
+}
+a {
+  transition: none;
+}
+a:hover {
+  transition: all 2s;
+  text-shadow: 1px 1px 5px black;
+  letter-spacing: 0.2vw;
 }
