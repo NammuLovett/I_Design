@@ -39,17 +39,15 @@ body {
   padding-top: 3vh;
 }
 
-/* título 1 */
+/* título 1 - header- backgroundTitle*/
 
 .backgroundTitle {
   background-color: var(--purpleColor);
   border: black solid 0.5rem;
   width: 90%;
   margin: auto;
-  padding: 1vh;
-  border-radius: 10px;
-}
-.backgroundTitle {
+  padding-top: 1vh;
+  border-radius: 0.3rem;
 }
 
 h1 {
@@ -57,4 +55,68 @@ h1 {
   font-weight: 600;
   text-align: center;
   font-size: 4rem;
+}
+
+/* título 2 - main- titleSect1*/
+
+.sect1 {
+  padding-top: 8vh;
+}
+
+.titleSect1 {
+  background-color: var(--whiteTitles);
+  border: black solid 0.2rem;
+  width: 95%;
+  margin: auto;
+  padding: 4vh;
+  border-radius: 0.3rem;
+  font-family: 'atma';
+  font-weight: 500;
+  font-size: 2.5rem;
+}
+
+.sect1BOXdiv {
+  padding: 5vh;
+}
+
+/* propiedades de los pingus */
+
+img {
+  width: 30%;
+  height: 30%;
+  float: left;
+  margin: 1vw;
+}
+
+p {
+  text-align: center;
+  margin-left: 0;
+  font-size: 1em;
+  font-family: var(--fontText);
+  text-align: justify;
+}
+.spanTitle {
+  font-size: 1.2em;
+  color: #8b0000;
+}
+/* BOX1  */
+
+.sect1BOX {
+  background-color: var(--softGreen);
+  border: black solid 0.2rem;
+  width: 20%;
+  height: 40%;
+  border-radius: 0.3rem;
+  float: left;
+  overflow: hidden;
+  padding: 0.5%;
+}
+
+/* footer */
+footer {
+  clear: both;
+  text-align: center;
+  font-size: 1.4em;
+  padding-top: 3vh;
+  padding-bottom: 3vh;
 }
