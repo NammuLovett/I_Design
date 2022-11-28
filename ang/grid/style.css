@@ -6,3 +6,55 @@
   text-decoration: none;
   scroll-behavior: smooth;
 }
+body {
+  height: 100vh;
+  width: 95vw;
+  background-color: lightblue;
+  margin: auto;
+}
+.grid-container {
+  display: grid;
+  /* definiendo las columnas del grid y su tamaño */
+  grid-template-columns: 1fr 1.2fr 1.5fr;
+  /* definiendo las filas y su tamaño */
+  grid-template-rows: 1fr 4fr 3fr 2fr;
+
+  height: 100vh;
+}
+
+main {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 3;
+
+  background-color: bisque;
+}
+
+.header {
+  grid-column-start: 3;
+  grid-column-end: 4;
+
+  background-color: palevioletred;
+}
+.nom {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  background-color: chartreuse;
+}
+.yum {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  background-color: cadetblue;
+}
+.tim {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  background-color: indigo;
+  color: aliceblue;
+}
+.background-img {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  background-color: darkseagreen;
+}
