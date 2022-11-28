@@ -12,6 +12,7 @@ body {
   background-color: lightblue;
   margin: auto;
 }
+
 .grid-container {
   display: grid;
   /* definiendo las columnas del grid y su tamaño */
@@ -20,70 +21,80 @@ body {
   grid-template-rows: 1fr 4fr 3fr 2fr;
 
   height: 100vh;
+
+  grid-template-areas:
+    'main main header'
+    'main main background'
+    'nom yum background'
+    'tim tim background';
 }
 
 main {
-  grid-column-start: 1;
+  /* definimos el nombre del área */
+  grid-area: main;
+  /*  grid-column-start: 1;
   grid-column-end: 3;
   grid-row-start: 1;
-  grid-row-end: 3;
+  grid-row-end: 3; */
+  /*   grid-column: 1 / 3;
+  grid-row: 1 / 3; */
 
   background-color: bisque;
 }
 
 .header {
-  /* grid-column-start: 3;
-  grid-column-end: 4; 
-   grid-row-start: 1;
-  grid-row-end: 2;
-  */
-  grid-column: 3 / 4;
-  grid-row: 1 / 2;
+  /* definimos el nombre del área */
+  grid-area: header;
+
+  /*  grid-column: 3 / 4;
+  grid-row: 1 / 2; */
 
   background-color: palevioletred;
 }
 .nom {
-  /*   grid-column-start: 1;
-  grid-column-end: 2;
-  grid-row-start: 3;
-  grid-row-end: 4; */
+  /* definimos el nombre del área */
+  grid-area: nom;
 
-  grid-column: 1 / 2;
-  grid-row: 3 / 4;
+  /*  grid-column: 1 / 2;
+  grid-row: 3 / 4; */
 
   background-color: chartreuse;
 }
 .yum {
-  /*  grid-column-start: 2;
-  grid-column-end: 3;
-  grid-row-start: 3;
-  grid-row-end: 4; */
+  grid-area: yum;
 
-  grid-column: 2 / 3;
-  grid-row: 3 / 4;
+  /*  grid-column: 2 / 3;
+  grid-row: 3 / 4; */
 
   background-color: cadetblue;
 }
-.tim {
-  /* grid-column-start: 1;
-  grid-column-end: 3;
-  grid-row-start: 4;
-  grid-row-end: 5; */
 
-  grid-column: 1 / 3;
-  grid-row: 4 / 5;
+.tim {
+  grid-area: tim;
+
+  /*  grid-column: 1 / 3;
+  grid-row: 4 / 5; */
 
   background-color: orange;
   color: aliceblue;
 }
+
 .background-img {
-  /* grid-column-start: 3;
-  grid-column-end: 4;
-  grid-row-start: 2;
-  grid-row-end: 5; */
-
-  grid-column: 3 / 4;
-  grid-row: 2 / 5;
-
+  grid-area: background;
+  background-image: url('https://img.freepik.com/foto-gratis/retrato-hermoso-mujer-joven-posicion-pared-gris_231208-10760.jpg?w=2000');
+  background-position: center;
+  object-fit: cover;
+  background-size: cover;
   background-color: darkseagreen;
+}
+
+.navbar {
+  height: 100%;
+  justify-content: space-evenly;
+  color: pink;
+  font-size: xx-large;
+  display: flex;
+}
+.bx {
+  cursor: pointer;
 }
