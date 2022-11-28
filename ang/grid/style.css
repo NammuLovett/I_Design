@@ -1,0 +1,100 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  scroll-behavior: smooth;
+}
+body {
+  height: 100vh;
+  width: 95vw;
+  background-color: lightblue;
+  margin: auto;
+}
+
+.grid-container {
+  display: grid;
+  /* definiendo las columnas del grid y su tamaño */
+  grid-template-columns: 1fr 1.2fr 1.5fr;
+  /* definiendo las filas y su tamaño */
+  grid-template-rows: 1fr 4fr 3fr 2fr;
+
+  height: 100vh;
+
+  grid-template-areas:
+    'main main header'
+    'main main background'
+    'nom yum background'
+    'tim tim background';
+}
+
+main {
+  /* definimos el nombre del área */
+  grid-area: main;
+  /*  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 3; */
+  /*   grid-column: 1 / 3;
+  grid-row: 1 / 3; */
+
+  background-color: bisque;
+}
+
+.header {
+  /* definimos el nombre del área */
+  grid-area: header;
+
+  /*  grid-column: 3 / 4;
+  grid-row: 1 / 2; */
+
+  background-color: palevioletred;
+}
+.nom {
+  /* definimos el nombre del área */
+  grid-area: nom;
+
+  /*  grid-column: 1 / 2;
+  grid-row: 3 / 4; */
+
+  background-color: chartreuse;
+}
+.yum {
+  grid-area: yum;
+
+  /*  grid-column: 2 / 3;
+  grid-row: 3 / 4; */
+
+  background-color: cadetblue;
+}
+
+.tim {
+  grid-area: tim;
+
+  /*  grid-column: 1 / 3;
+  grid-row: 4 / 5; */
+
+  background-color: orange;
+  color: aliceblue;
+}
+
+.background-img {
+  grid-area: background;
+  background-image: url('https://img.freepik.com/foto-gratis/retrato-hermoso-mujer-joven-posicion-pared-gris_231208-10760.jpg?w=2000');
+  background-position: center;
+  object-fit: cover;
+  background-size: cover;
+  background-color: darkseagreen;
+}
+
+.navbar {
+  height: 100%;
+  justify-content: space-evenly;
+  color: pink;
+  font-size: xx-large;
+  display: flex;
+}
+.bx {
+  cursor: pointer;
+}

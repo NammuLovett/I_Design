@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <head>
+        <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <title>grid</title>
+  </head>
+  <body>
+    <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Diseño de interfaz</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>DISEÑO DE INTERFAZ</h1>
+
+    <p>
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Culpa eius
+      repudiandae voluptatem odit quae modi, odio quo pariatur. Maiores
+      exercitationem eos odio tempora enim officia voluptatum vel quam.
+      Incidunt, odit?
+    </p>
+    <hr />
+    <pre>
+      This is a sample text 
+        it will be 
+      you my sister
+    </pre>
+
+    <p class="parrafo2">
+      Lorem ipsum oye!! sit amet consectetur adipisicing elit. Quisquam
+    </p>
+    <hr />
+    <span
+      >&lt;wbr&gt; es para separar palabras y con & shy mete guioncitos<wbr />
+      cupidi<wbr />tate&shy;laudan&shy;tium&shy;cup<wbr />idita&shy;telaudan&shy;tium
+      <wbr />
+    </span>
+    <hr />
+    <p>Negrita es con la etiqueta <strong>&lt;strong&gt;</strong></p>
+    <p>Cursiva es con la etiqueta <em>&lt;em&gt;</em></p>
+    <p>Texto resaltado <mark>&lt;mark&gt;</mark></p>
+    <p>Subindice <sub>&lt;sub&gt;</sub> superíndice <sup>&lt;sup&gt;</sup></p>
+    <p>
+      <abbr title="Ponemos una palabra"
+        >&lt;abbr&gt; en el title ponemos lo que queramos</abbr
+      >
+    </p>
+    <hr />
+    <p>
+      Descargar archivo&lt;a href="ruta" download=""&gt;
+      <a href="/README.md" download="" target="_blank">download </a>
+
+      rel: next, prev, nofollow (no siga), external, noreferrer noopnener
+      (evitar movidas maliciosas)
+    </p>
+
+    <hr />
+
+    <p>Listas No numeradas &lt;ul&gt; etiqueta padre &lt;li&gt; - dentro</p>
+    <p>Listas Numeradas &lt;ol&gt; etiqueta padre &lt;li&gt; - dentro.</p>
+    <p>
+      Dentro del &lt;ol&gt; type:"a" empieza en la lista ordenada en la a, b,
+      c... Si ponemos type:"A" A, B, C... type:"i" i,ii,iii, type:"I"
+      I,II,III... Si no pones nada se considera como número. el atributo
+      <em>reverse</em> hace la lista al revés.
+    </p>
+    <hr />
+
+    <ul>
+      <li>item 1</li>
+      <li>item 2</li>
+      <li>item 3</li>
+    </ul>
+
+    <ol type="I" reversed>
+      <li>item 1</li>
+      <li>item 2</li>
+      <li>item 3</li>
+    </ol>
+    <hr />
+    <p>&lt;dt&gt; DATA TERM</p>
+    <p>&lt;dd&gt; DATA DEFINITION</p>
+    <dt>Termino 1</dt>
+    <dd>Aquí va la definición del termino 1</dd>
+
+    <hr />
+
+    <details>
+      <summary>&lt;summary&gt; Lo que queremos que se muestre</summary>
+      Hola que ase &lt;details&gt;
+    </details>
+
+    <hr />
+    <blockquote>
+      &lt;blockquote&gt; El mal es una enfermedad presente a lo largo de la
+      historia. Desgraciadamente el ser humano no tiene la capacidad de expresar
+      su bondad
+    </blockquote>
+
+    <hr />
+
+    <h2>Imágenes</h2>
+    <p>Propiedad inline</p>
+    &lt;img&gt;
+    <p>Propiedad bloque</p>
+    &lt;picture&gt; &lt;figure&gt;
+
+    <br />
+    <map
+      name="mimapa"
+      shape="rect"
+      coords="535,484,633,577"
+      alt="cojín"
+      href="www.wikipedia.com"
+    ></map>
+    <map
+      name="mimapa"
+      shape="circle"
+      coords="666,162,100"
+      alt="lampara"
+      href="www.wikipedia.com"
+    ></map>
+    <map
+      name="mimapa"
+      shape="poly"
+      coords="1041,490,934,394,1039,288,1128,417"
+      alt="arbol"
+      href="www.wikipedia.com"
+    ></map>
+    <img src="casa.png" alt="casa decoración" usemap="#mimapa" />
+    <hr />
+    <p>Para hacer imágenes responsive se utiliza la etiqueta &lt;picture&gt;</p>
+    <!-- Para hacer responsive en imágenes -->
+    <picture>
+      <source media="(min-width:1200px)" srcset="./earth.jpg" />
+      <source media="(min-width:800px)" srcset="./earth300.png" />
+      <source srcset="./earth300.png" />
+      <img src="" alt="tierra" />
+    </picture>
+
+    <hr />
+    <br />
+
+    &lt;figure&gt; &lt;figcaption&gt;
+
+    <figure>
+      <img src="./earth300.png" alt="" />
+      <figcaption>ficaption Leyenda de la imagen</figcaption>
+    </figure>
+
+    <hr />
+
+    <table border="1">
+      <tr>
+        <th>cabecera</th>
+      </tr>
+      <tr>
+        <td>table data</td>
+      </tr>
+      <tfoot>
+        <td>Table foot</td>
+      </tfoot>
+      <caption>
+        Pone una leyenda chido
+      </caption>
+    </table>
+
+    <hr />
+    &lt;table&gt;
+
+<table border="1">
+  <tr>
+    <td colspan="2">1</td>
+    </tr>
+    <td>
+      2
+    </td>
+    <td rowspan="2">3</td>
+    <tr><td>4</td></tr>
+  </tr>
+</table>
+    <hr />
+
+<hr />
+&lt;button&gt;
+<button>HOLA QUE ASE</button>
+
+<hr>
+&lt;audio&gt;
+<audio src=""  ></audio>
+&lt;video&gt;
+<video src="" controls autoplay loop></video>
+&lt;iframe&gt;
+<iframe src="" frameborder="0"></iframe>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/MGfxNWr-9hE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<hr>
+
+&lt;form&gt; &lt;fieldset&gt;   &lt;legend&gt; Texto &lt;/legend&gt; &lt;label&gt;  &lt;/label&gt;&lt;input&gt; input &lt;/input&gt; &lt;/fieldset&gt;&lt;/form&gt;
+<form name="formulario" action="" method="">
+  <fieldset>
+    <legend>Título del formulario</legend>
+    <label for="input1"> Input 1</label>
+    <input type="text" name="input1" id="input1">
+  </fieldset>
+</form>
+
+
+</body>
+</html>
+  </body>
+</html>
