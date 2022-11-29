@@ -92,17 +92,17 @@ h1 {
 }
 /* propiedades de los pingus */
 
-img {
+.s1img {
   width: 30%;
   height: 30%;
   float: left;
   margin: 1vw;
 }
 
-p {
+.sect1 p {
   text-align: center;
   margin-left: 0;
-  font-size: 1em;
+  font-size: 1rem;
   font-family: var(--fontText);
   text-align: justify;
 }
@@ -126,7 +126,7 @@ p {
 
 .sect2 {
   clear: both;
-  padding-top: 4vh;
+  padding-top: 1vh;
   width: 100%;
 }
 
@@ -168,6 +168,21 @@ p {
 }
 
 /* sección 2 fila 1 */
+h3 {
+  font-family: var(--fontTitle);
+  clear: both;
+  text-align: center;
+  color: var(--softGreen);
+  font-size: 2rem;
+  font-weight: 500;
+}
+.sect2 p {
+  text-align: center;
+  font-size: 1rem;
+  font-family: var(--fontText);
+  text-align: justify;
+  line-height: 2rem;
+}
 
 .sect2raw1 {
   padding: 4vh;
@@ -177,10 +192,14 @@ p {
 /* cajas fila 1 */
 
 .sect2raw1BOX {
-  background-color: var(--softGreen);
-
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    180deg,
+    rgba(36, 36, 52, 0.8568181818181818) 0%,
+    rgba(163, 180, 162, 0.7681818181818182) 20%
+  );
   border: black solid 0.2rem;
-  width: 23%;
+  width: 20%;
   height: 60%;
   border-radius: 0.3rem;
   float: left;
@@ -188,9 +207,16 @@ p {
   padding: 2%;
 }
 
+.s2img {
+  width: 80%;
+  height: 80%;
+  display: block;
+  margin: 10% auto;
+}
+
 /* sección 2 fila 2  */
 
-sect2raw2 {
+.sect2raw2 {
   padding: 4vh;
   width: 100%;
   margin: auto;
