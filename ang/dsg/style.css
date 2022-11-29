@@ -214,6 +214,16 @@ h3 {
   margin: 10% auto;
 }
 
+/* Centramiento de divs */
+.s2r1box1 {
+  margin: 0 1% 0 9%;
+}
+.s2r1box2,
+.s2r1box3,
+.s2r1box4 {
+  margin: 0 1% 0 0;
+}
+
 /* sección 2 fila 2  */
 
 .sect2raw2 {
