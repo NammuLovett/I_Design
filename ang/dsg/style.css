@@ -231,3 +231,15 @@ h3 {
   width: 100%;
   margin: auto;
 }
+
+.sect2raw2BOX {
+}
+
+.titleImg {
+  background-color: var(--softGreen);
+}
+
+.boxText {
+  background-color: var(--darkGreenColor);
+  color: var(--softGreen);
+}
