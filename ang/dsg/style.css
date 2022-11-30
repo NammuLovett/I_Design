@@ -242,7 +242,7 @@ body {
 /* propiedades de la caja madre section 3 */
 
 .sect3raw2BOX {
-  border: black solid 0.3rem;
+  border: black solid 0.4rem;
   width: 20%;
   height: 60%;
   border-radius: 0.3rem;
@@ -254,8 +254,9 @@ body {
 
 .titleImg {
   background-color: var(--softGreen);
-
+  width: 100%;
   float: left;
+  padding: 10%;
 }
 
 .titleImg h2 {
@@ -263,7 +264,8 @@ body {
   font-family: var(--fontTitle);
   float: left;
   font-size: 2rem;
-  padding-top: 20%;
+  width: 50%;
+  font-weight: 600;
 }
 
 .titleImg img {
@@ -271,7 +273,6 @@ body {
   height: 30%;
   float: left;
   margin: 1vw;
-  padding-top: 30%;
 }
 
 .s3r2box1 {
@@ -295,6 +296,8 @@ body {
   line-height: 2.5rem;
   font-size: 1.5rem;
   font-weight: 100;
+
+  border-top: black solid 0.4rem;
 }
 
 footer {
