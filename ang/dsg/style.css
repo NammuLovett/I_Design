@@ -16,7 +16,7 @@
 
   /* color */
   --purpleColor: #786dce90;
-  --darkGreenColor: #0d1f22;
+  --darkGreenColor: #0d1f22c4;
   --softGreen: #a3b4a2;
   --linkSpan: #8b0000;
 }
@@ -254,7 +254,7 @@ body {
 
 .titleImg {
   background-color: var(--softGreen);
-  height: 20%;
+
   float: left;
 }
 
@@ -262,7 +262,7 @@ body {
   color: var(--darkGreenColor);
   font-family: var(--fontTitle);
   float: left;
-  font-size: 1.5rem;
+  font-size: 2rem;
   padding-top: 20%;
 }
 
@@ -292,5 +292,15 @@ body {
   padding: 5%;
   overflow: hidden;
   text-align: justify;
-  line-height: 2rem;
+  line-height: 2.5rem;
+  font-size: 1.5rem;
+  font-weight: 100;
+}
+
+footer {
+  padding: 2%;
+}
+footer p {
+  font-family: var(--fontText);
+  text-align: center;
 }
