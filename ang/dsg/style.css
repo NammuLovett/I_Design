@@ -49,7 +49,7 @@ body {
   border-radius: 0.3rem;
 }
 
-h1 {
+.backgroundTitle h1 {
   font-family: 'atma';
   font-weight: 600;
   text-align: center;
@@ -126,8 +126,8 @@ h1 {
 
 .sect2 {
   clear: both;
-  padding-top: 1vh;
   width: 100%;
+  padding: 4vh;
 }
 
 .sect2::after {
@@ -168,7 +168,7 @@ h1 {
 }
 
 /* sección 2 fila 1 */
-h3 {
+.sect2raw1BOX h3 {
   font-family: var(--fontTitle);
   clear: both;
   text-align: center;
@@ -198,7 +198,7 @@ h3 {
     rgba(36, 36, 52, 0.8568181818181818) 0%,
     rgba(163, 180, 162, 0.7681818181818182) 20%
   );
-  border: black solid 0.2rem;
+  border: black solid 0.3rem;
   width: 20%;
   height: 60%;
   border-radius: 0.3rem;
@@ -224,27 +224,14 @@ h3 {
   margin: 0 1% 0 0;
 }
 
-/* sección 2 fila 2  */
+/* sección 3*/
 
-.sect2raw2 {
-  padding: 4vh;
+.sect3 {
+  clear: both;
   width: 100%;
-  margin: auto;
 }
 
-.sect2raw2BOX {
-  background: rgb(2, 0, 36);
-
-  border: black solid 0.2rem;
-  width: 20%;
-  height: 60%;
-  border-radius: 0.3rem;
-  float: left;
-  overflow: hidden;
-  padding: 2%;
-}
-
-.sect2raw2BOX::after {
+.sect3::after {
   content: '.';
   visibility: hidden;
   height: 0;
@@ -252,15 +239,58 @@ h3 {
   clear: both;
 }
 
+/* propiedades de la caja madre section 3 */
+
+.sect3raw2BOX {
+  border: black solid 0.3rem;
+  width: 20%;
+  height: 60%;
+  border-radius: 0.3rem;
+  float: left;
+  overflow: hidden;
+}
+
+/* imagenes y títulos de cada caja */
+
 .titleImg {
   background-color: var(--softGreen);
-  width: 80%;
-  height: 80%;
-  display: block;
-  margin: 10% auto;
+  height: 20%;
+  float: left;
+}
+
+.titleImg h2 {
+  color: var(--darkGreenColor);
+  font-family: var(--fontTitle);
+  float: left;
+  font-size: 1.5rem;
+  padding-top: 20%;
+}
+
+.titleImg img {
+  width: 30%;
+  height: 30%;
+  float: left;
+  margin: 1vw;
+  padding-top: 30%;
+}
+
+.s3r2box1 {
+  margin: 0 1% 0 9%;
+}
+.s3r2box2,
+.s3r2box3,
+.s3r2box4 {
+  margin: 0 1% 0 0;
 }
 
 .boxText {
+  height: 80%;
+  float: left;
   background-color: var(--darkGreenColor);
   color: var(--softGreen);
+  font-family: var(--fontText);
+  padding: 5%;
+  overflow: hidden;
+  text-align: justify;
+  line-height: 2rem;
 }
