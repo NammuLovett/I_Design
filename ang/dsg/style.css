@@ -233,10 +233,31 @@ h3 {
 }
 
 .sect2raw2BOX {
+  background: rgb(2, 0, 36);
+
+  border: black solid 0.2rem;
+  width: 20%;
+  height: 60%;
+  border-radius: 0.3rem;
+  float: left;
+  overflow: hidden;
+  padding: 2%;
+}
+
+.sect2raw2BOX::after {
+  content: '.';
+  visibility: hidden;
+  height: 0;
+  display: block;
+  clear: both;
 }
 
 .titleImg {
   background-color: var(--softGreen);
+  width: 80%;
+  height: 80%;
+  display: block;
+  margin: 10% auto;
 }
 
 .boxText {
