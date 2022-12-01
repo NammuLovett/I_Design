@@ -238,3 +238,63 @@ h2 {
   font-size: 2rem;
   margin-bottom: 2rem;
 }
+
+/* FOOTER */
+.main {
+  display: flex;
+}
+
+.col {
+  width: 25%;
+}
+
+.col h4 {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  position: relative;
+}
+.col h4::before {
+  content: '';
+  position: absolute;
+  height: 2px;
+  width: 50px;
+  left: 0;
+  bottom: -5px;
+  background-color: var(--main-color);
+}
+
+.col ul li:not(:last-child) {
+  margin-bottom: 15px;
+}
+.col ul li a {
+  display: block;
+  color: #9897a9;
+  font-size: 1.1rem;
+  text-transform: capitalize;
+  transition: 0.4s;
+}
+
+.col ul li a:hover {
+  color: var(--text-color);
+  transform: translateX(-12px);
+}
+
+.col .social {
+  display: flex;
+}
+
+.col .social i {
+  color: #9897a9;
+  font-size: 21px;
+  background-color: var(--main-color);
+  border-radius: 50%;
+  padding: 10px;
+  color: var(--text-color);
+  margin-right: 10px;
+  transition: 0.4s;
+}
+.col .social i:hover {
+  transform: scale(1.2);
+  color: var(--main-color);
+  background-color: var(--text-color);
+}
