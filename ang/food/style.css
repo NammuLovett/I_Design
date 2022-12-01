@@ -113,13 +113,13 @@ section {
   font-size: 16px;
 }
 
-.about-txt h5 {
+h5 {
   color: var(--main-color);
   font-weight: 500;
   margin-bottom: 20px;
   font-size: 4rem;
 }
-.about-txt h2 {
+h2 {
   font-size: var(--h2-font);
 }
 
@@ -129,4 +129,72 @@ section {
 
 .about-txt p {
   margin: 20px 0;
+}
+
+/* menú */
+.heading {
+  text-align: center;
+  margin: 2rem;
+}
+
+.heading h2 {
+  font-size: var(--h2-font);
+}
+
+.menu-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  align-items: center;
+}
+.box {
+  background-color: #feeeef;
+  border-radius: 0.5rem;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  margin-top: 4rem;
+  position: relative;
+}
+
+.box-image {
+  width: 220px;
+  height: 220px;
+}
+
+.box-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.box h2 {
+  font-size: 1.3rem;
+  color: var(--main-color);
+}
+
+.box h3 {
+  font-size: 1rem;
+  color: var(--bg-color);
+  font-weight: 400;
+  margin: 4px 0 10px;
+}
+
+.box span {
+  font-size: var(--p-font);
+  color: var(--main-color);
+  font-weight: 600;
+}
+
+.box .bx {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 1.5rem;
+  background-color: var(--main-color);
+  cursor: pointer;
+  padding: 7px 10px;
+  border-radius: 0 0.5rem 0 0.5rem;
 }
