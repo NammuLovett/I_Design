@@ -100,48 +100,83 @@ main p {
   line-height: 5vh;
 }
 
+.menu_dropdown a {
+  color: var(--color_list_a);
+  font-family: var(--p_a_Font);
+  font-size: 1.4rem;
+  transition: 0.3s;
+}
+
+.menu_dropdown a:hover {
+  color: var(--color_title);
+  font-family: var(--p_a_Font);
+  font-size: 1.6rem;
+  text-decoration: underline;
+}
+
 .menu_dropdown img {
   width: 200px;
   height: 200px;
   border-radius: 50%;
   margin-top: 20%;
 }
-/* icono  */
-.burguer_icon {
-  cursor: pointer;
-  position: relative;
-  z-index: 101;
-  height: 10px;
-  top: 0;
-  right: 0;
-}
-span {
-  display: block;
-  border: 3px solid var(--color_barBurger_close);
-  border-radius: 9px;
 
-  margin: 5px;
-  height: 5px;
-  width: 2%;
+/* icono de la hamburguesa  */
+/* checkbox */
+
+.burguer_completed {
+  position: absolute;
+  top: 5%;
+  right: 5%;
+  z-index: 1000;
+}
+.burguer_icon {
+  display: block;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
 }
 
 input[type='checkbox'] {
-  opacity: 1;
-  position: absolute;
-  top: 4%;
-  right: 2.5%;
-  transform: scale(2);
-  padding: 10px;
 }
 
-input:checked ~ div.burguer_icon {
-  color: #ff685a;
+.line {
+  position: absolute;
+  height: 6px;
+  width: 100%;
+  border-radius: 3px;
+  background: var(--color_barBurger_close);
+  transition: 0.5s;
 }
+
+/* lineas */
+.line:nth-child(1) {
+  top: 12px;
+}
+.line:nth-child(2) {
+  top: 24px;
+}
+.line:nth-child(3) {
+  top: 36px;
+}
+
+input:checked + .burguer_icon .line:nth-child(1) {
+  transform: translateY(12px) rotate(-45deg);
+}
+input:checked + .burguer_icon .line:nth-child(2) {
+  opacity: 0;
+}
+
+input:checked + .burguer_icon .line:nth-child(3) {
+  transform: translateY(-12px) rotate(45deg);
+}
+
+/* input:checked ~ div.burguer_icon {
+  color: #ff685a;
+} */
 
 /*
 transform: origin -> para que el aspa tenga de referencia la esquina.
-rotate:45 & -45
-translate 3px
 */
 
 /* display block
