@@ -89,15 +89,15 @@ main p {
   top: 0;
   right: 0;
   text-align: center;
+  background: rgb(50, 19, 37);
+  background-image: url(/img/texture.png),
+    linear-gradient(180deg, #321325e6 0%, #5f0f40e6 50%, #ce4a11e6 100%);
 }
 
 .menu_dropdown ul {
   padding-top: 50%;
   height: 100%;
   line-height: 5vh;
-  background: rgb(50, 19, 37);
-  background-image: url(/img/texture.png),
-    linear-gradient(180deg, #321325e6 0%, #5f0f40e6 50%, #ce4a11e6 100%);
 }
 
 .menu_dropdown img {
@@ -109,7 +109,9 @@ main p {
 /* icono  */
 .burguer_icon {
   cursor: pointer;
+  position: relative;
   z-index: 101;
+  height: 10px;
   top: 0;
   right: 0;
 }
