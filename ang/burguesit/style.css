@@ -86,8 +86,9 @@ main p {
   background-color: #daff7d31;
   position: absolute;
   z-index: 100;
-  top: 0;
-  right: 0;
+  top: 0px;
+  right: -285px;
+  transition: 0.5s linear;
   text-align: center;
   background: rgb(50, 19, 37);
   background-image: url(/img/texture.png),
@@ -164,6 +165,7 @@ input[type='checkbox'] {
 
 #hamburger:checked + .burguer_icon .line:nth-child(1) {
   transform: translateY(12px) rotate(-45deg);
+  background: var(--color_barBurger_open);
 }
 #hamburger:checked + .burguer_icon .line:nth-child(2) {
   opacity: 0;
@@ -171,37 +173,11 @@ input[type='checkbox'] {
 
 #hamburger:checked + .burguer_icon .line:nth-child(3) {
   transform: translateY(-12px) rotate(45deg);
+  background: var(--color_barBurger_open);
 }
 
-/* input:checked ~ div.burguer_icon {
-  color: #ff685a;
-} */
-
-/*
-transform: origin -> para que el aspa tenga de referencia la esquina.
-*/
-
-/* display block
-width 50px
-height 50px
-
-border box 
-margin 0
-padding 0
-
-contenedor líneas{
-  span
-  span
-  span  
-
-  display block
-  opacity 0.
-  transform origin
-  rotate 45 & -45
-  translate 3px
+#hamburger:checked + .menu_dropdown {
+  top: 0;
+  right: 0;
+  z-index: 1000;
 }
-
-user-select:none - No puedas seleccionar
- */
-
-/* Icon HAMBURGUESITA*/
