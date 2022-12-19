@@ -5,17 +5,30 @@
   list-style: none;
   text-decoration: none;
   scroll-behavior: smooth;
-  font-family: 'poppins';
   font-size: 16px;
 }
 
-header {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  padding: 40px 100px;
-  z-index: 1000;
+:root {
+  /*FONTS*/
+
+  --title_Font: 'Permanent Marker';
+  --p_a_Font: 'cantarell';
+
+  /*COLORS*/
+
+  --background_P: #f5f5f575;
+  --color_P: #000;
+  --color_title: #f5f5f5;
+
+  --color_barBurger_close: #f1f113;
+  --color_barBurger_open: #ff685a;
+
+  --color_list_a: #daff7d;
+
+  /*
+Color de los elementos de la lista cuando :hover está activo: #f5f5f5 (subrayado de color #DAFF7D)
+Degradado de fondo del bloque del menú hamburguesa: #321325e6 (0%), 5f0f40e6 (50%), #ce4a11e6 (100%)
+*/
 }
 
 .container {
@@ -24,41 +37,107 @@ header {
   width: 100%;
   height: 100%;
 
-  z-index: 1;
-  background-image: url(/media/burger.jpg);
+  background-image: url(/t5/ex5/img/burger.jpg);
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: 100% 100%;
   background-position: center;
-  background-size: cover;
   background-color: #fff;
 }
 
-.menu {
-  display: block;
-  width: 50px;
-  height: 50px;
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 300px;
+/* medidas main nav */
+main {
+  width: 80%;
   height: 100%;
-  justify-content: center;
-  align-items: center;
 }
 
-.menu ul {
+nav {
+  width: 20%;
+  height: 100%;
+}
+
+main h1 {
+  font-family: var(--title_Font);
+  color: var(--color_title);
+  font-size: 4rem;
+  text-align: center;
+  position: relative;
+  top: 10vh;
+}
+
+.p_background {
+  background-color: var(--background_P);
+  border-radius: 10px;
+  width: 70%;
+  margin: auto;
+  padding: 1.5%;
+  position: relative;
+  top: 20vh;
+}
+
+main p {
+  font-family: var(--p_a_Font);
+  color: var(--color_P);
+  font-size: 1.2rem;
+  line-height: 30px;
   position: relative;
 }
 
-.menu ul li a {
-  font-size: 24px;
-  color: #fff;
+.menu_dropdown {
+  background-color: #daff7d31;
+  position: absolute;
+  z-index: 100;
+  top: 0;
+  right: 0;
+  text-align: center;
 }
 
-.menu ul li a:hover {
-  font-size: 24px;
-  color: rgb(0, 187, 255);
+.menu_dropdown ul {
+  padding-top: 50%;
+  line-height: 5vh;
 }
+
+.menu_dropdown img {
+  padding-top: 30%;
+  width: 100%;
+  border-radius: 50%;
+  display: block;
+  overflow: hidden;
+}
+/* icono  */
+.burguer_icon {
+  cursor: pointer;
+  z-index: 101;
+  top: 0;
+  right: 0;
+}
+span {
+  display: block;
+  border: 3px solid var(--color_barBurger_close);
+  border-radius: 9px;
+
+  margin: 5px;
+  height: 5px;
+  width: 2%;
+}
+
+input[type='checkbox'] {
+  opacity: 1;
+  position: absolute;
+  top: 4%;
+  right: 2.5%;
+  transform: scale(2);
+  padding: 10px;
+}
+
+input:checked ~ div.burguer_icon {
+  color: #ff685a;
+}
+
+/*
+transform: origin -> para que el aspa tenga de referencia la esquina.
+rotate:45 & -45
+translate 3px
+*/
 
 /* display block
 width 50px
@@ -84,6 +163,3 @@ user-select:none - No puedas seleccionar
  */
 
 /* Icon HAMBURGUESITA*/
-
-.nav-icon {
-}
