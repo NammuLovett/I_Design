@@ -93,15 +93,18 @@ main p {
 
 .menu_dropdown ul {
   padding-top: 50%;
+  height: 100%;
   line-height: 5vh;
+  background: rgb(50, 19, 37);
+  background-image: url(/img/texture.png),
+    linear-gradient(180deg, #321325e6 0%, #5f0f40e6 50%, #ce4a11e6 100%);
 }
 
 .menu_dropdown img {
-  padding-top: 30%;
-  width: 100%;
+  width: 200px;
+  height: 200px;
   border-radius: 50%;
-  display: block;
-  overflow: hidden;
+  margin-top: 20%;
 }
 /* icono  */
 .burguer_icon {
