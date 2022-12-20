@@ -42,6 +42,7 @@ Degradado de fondo del bloque del menú hamburguesa: #321325e6 (0%), 5f0f40e6 (5
   background-size: 100% 100%;
   background-position: center;
   background-color: #fff;
+  overflow: hidden;
 }
 
 /* medidas main nav */
@@ -87,7 +88,7 @@ main p {
   position: absolute;
   z-index: 100;
   top: 0px;
-  right: -285px;
+  right: -400px;
   transition: 0.5s linear;
   text-align: center;
   background: rgb(50, 19, 37);
@@ -152,7 +153,7 @@ input[type='checkbox'] {
   transition: 0.5s;
 }
 
-/* lineas */
+/* posicionamiento de las lineas */
 .line:nth-child(1) {
   top: 12px;
 }
