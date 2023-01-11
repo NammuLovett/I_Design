@@ -84,3 +84,110 @@ footer {
   font-family: var(--p_a_Font);
   color: var(--color_text);
 }
+
+/* menu dropdown */
+
+.menu_dropdown {
+  background-color: #daff7d31;
+  position: relative;
+  z-index: 100;
+  top: -100%;
+  left: 100%;
+  text-align: center;
+  background-color: rgb(50, 19, 37);
+  transition: all 1s;
+  background-image: url(img/texture.png),
+    linear-gradient(180deg, #321325e6 0%, #5f0f40e6 50%, #ce4a11e6 100%);
+}
+
+#cbburger:checked + .burguer_icon + .menu_dropdown {
+  left: 80%;
+  position: relative;
+}
+
+.menu_dropdown ul {
+  padding-top: 50%;
+  height: 100%;
+  line-height: 5vh;
+}
+
+.menu_dropdown a {
+  color: var(--color_list_a);
+  font-family: var(--p_a_Font);
+  font-size: 1.4rem;
+  transition: 0.3s;
+}
+
+.menu_dropdown a:hover {
+  color: var(--color_title);
+  font-family: var(--p_a_Font);
+  text-decoration: underline;
+  letter-spacing: 5px;
+}
+
+.menu_dropdown img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  margin-top: 20%;
+  position: relative;
+}
+
+/* icono de la hamburguesa  */
+.burguer_icon {
+  display: block;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  z-index: 900;
+  top: 5%;
+  right: 5%;
+}
+
+/* checkbox */
+
+input[type='checkbox'] {
+  position: absolute;
+  top: 5%;
+  right: 5%;
+  z-index: 1000;
+  width: 50px;
+  height: 50px;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.line {
+  position: absolute;
+  height: 6px;
+  width: 100%;
+  border-radius: 3px;
+  background: var(--color_barBurger_close);
+  transition: 0.5s;
+}
+
+/* posicionamiento de las lineas */
+.line:nth-child(1) {
+  top: 15px;
+}
+.line:nth-child(2) {
+  top: 30px;
+}
+.line:nth-child(3) {
+  top: 45px;
+}
+
+/* animación en checked */
+#cbburger:checked + .burguer_icon .line:nth-child(1) {
+  transform: translateY(15px) rotate(45deg);
+  background: var(--color_barBurger_open);
+}
+#cbburger:checked + .burguer_icon .line:nth-child(2) {
+  opacity: 0;
+  width: 0;
+}
+
+#cbburger:checked + .burguer_icon .line:nth-child(3) {
+  transform: translateY(-15px) rotate(-45deg);
+  background: var(--color_barBurger_open);
+}
