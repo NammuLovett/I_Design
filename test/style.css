@@ -14,7 +14,7 @@
   --p_a_Font: 'cantarell';
 
   /*COLORS*/
-  --color_text: hsl(0, 0%, 96%);
+  --color_text: rgb(244, 255, 255);
   --color_bcg: #ff685a;
   --color_title: rgb(244, 226, 30);
   --color_burger: #846137;
@@ -114,23 +114,22 @@ footer {
 }
 
 .menu_dropdown a {
-  color: var(--color_list_a);
+  color: var(--color_bcg);
   font-family: var(--p_a_Font);
   font-size: 1.4rem;
   transition: 0.3s;
 }
 
 .menu_dropdown a:hover {
-  color: var(--color_title);
+  color: var(--color_text);
   font-family: var(--p_a_Font);
   text-decoration: underline;
-  letter-spacing: 5px;
 }
 
 .menu_dropdown img {
   width: 200px;
   height: 200px;
-  border-radius: 50%;
+  border-radius: 10%;
   margin-top: 20%;
   position: relative;
 }
