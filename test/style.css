@@ -33,7 +33,6 @@ header h1 {
   text-align: center;
   background-color: var(--color_bcg);
   width: 70%;
-  border-radius: 10px;
   border: black 2px solid;
   color: var(--color_title);
 }
