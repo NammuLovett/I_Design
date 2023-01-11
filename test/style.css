@@ -26,24 +26,43 @@ body {
   background-size: 100% 100%;
 }
 
-header h1 {
+.container {
+  position: relative;
+}
+
+.title {
   margin: auto;
+  margin-top: 2%;
   font-size: 3rem;
   font-family: var(--title_Font);
   text-align: center;
   background-color: var(--color_bcg);
-  width: 70%;
-  border: black 2px solid;
   color: var(--color_title);
+  width: 50%;
+  padding: 2%;
 }
 
+.pral {
+  width: 70%;
+  border: black 5px solid;
+  position: fixed;
+  left: 15%;
+}
+
+.sec {
+  position: sticky;
+}
 main {
   background-image: url(media/campero.jpg);
   color: var(--color_text);
   font-family: var(--p_a_Font);
   width: 70%;
   margin: auto;
+  margin-top: 5%;
   line-height: 3rem;
+  padding: 4%;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
 }
 
 main p {
