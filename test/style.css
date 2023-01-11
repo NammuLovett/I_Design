@@ -17,6 +17,8 @@
   --color_text: hsl(0, 0%, 96%);
   --color_bcg: #ff685a;
   --color_title: rgb(244, 226, 30);
+  --color_burger: #846137;
+  --color_Sburger: #ef9e3b;
 }
 
 body {
@@ -28,7 +30,7 @@ body {
 
 .container {
   position: relative;
-  margin-top: 15%;
+  margin: 15% 0 7%;
 }
 
 .title {
@@ -88,20 +90,20 @@ footer {
 /* menu dropdown */
 
 .menu_dropdown {
-  background-color: #daff7d31;
-  position: relative;
+  position: absolute;
   z-index: 100;
-  top: -100%;
-  left: 100%;
+  top: -20%;
+  right: 50%;
+  height: 60%;
   text-align: center;
-  background-color: rgb(50, 19, 37);
   transition: all 1s;
-  background-image: url(img/texture.png),
+  background-color: #daff7d31;
+  background-image: url(media/background.png),
     linear-gradient(180deg, #321325e6 0%, #5f0f40e6 50%, #ce4a11e6 100%);
 }
 
 #cbburger:checked + .burguer_icon + .menu_dropdown {
-  left: 80%;
+  right: 100%;
   position: relative;
 }
 
@@ -140,7 +142,7 @@ footer {
   height: 50px;
   position: absolute;
   z-index: 900;
-  top: -8%;
+  top: -6%;
   left: 3%;
 }
 
@@ -148,8 +150,9 @@ footer {
 
 input[type='checkbox'] {
   position: absolute;
-  top: -8%;
+  top: -6%;
   left: 3%;
+
   z-index: 1000;
   width: 50px;
   height: 50px;
@@ -162,10 +165,13 @@ input[type='checkbox'] {
   height: 6px;
   width: 100%;
   border-radius: 3px;
-  background: var(--color_text);
+  background: var(--color_Sburger);
   transition: 0.5s;
 }
 
+.soft {
+  background: var(--color_burger);
+}
 /* posicionamiento de las lineas */
 .line:nth-child(1) {
   top: 15px;
