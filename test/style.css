@@ -29,7 +29,6 @@ body {
 }
 
 .container {
-  position: relative;
   margin: 15% 0 7%;
 }
 
@@ -102,6 +101,7 @@ footer {
   background-color: #daff7d31;
   background-image: url(media/background.png),
     linear-gradient(180deg, #ce94b6e6 0%, #5f0f40e6 50%, #ae5ed0e6 100%);
+  background-size: 100% 100%;
 }
 
 #cbburger:checked + .burguer_icon + .menu_dropdown {
@@ -142,17 +142,17 @@ footer {
   display: block;
   width: 50px;
   height: 50px;
-  position: absolute;
+  position: fixed;
   z-index: 900;
-  top: -10%;
+  top: 5%;
   left: 3%;
 }
 
 /* checkbox */
 
 input[type='checkbox'] {
-  position: absolute;
-  top: -10%;
+  position: fixed;
+  top: 5%;
   left: 3%;
 
   z-index: 1000;
