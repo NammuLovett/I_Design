@@ -99,7 +99,7 @@ footer {
   position: absolute;
   z-index: 100;
   top: 0;
-  left: -100%;
+  left: 0%;
   height: 100vh;
   width: 100%;
   text-align: center;
@@ -218,4 +218,9 @@ input[type='checkbox'] {
 #cbburger:checked + .burguer_icon .line:nth-child(3) {
   transform: translateY(-15px) rotate(-45deg);
   background: var(--color_text);
+}
+
+/*Animación elementos menú*/
+#cbburguer:checked ~ .menu_dropdown ul .liUno {
+  background-color: transparent;
 }
