@@ -151,15 +151,21 @@ footer {
 
 /* icono de la hamburguesa  */
 .burguer_icon {
-  display: block;
+  display: absolute;
   width: 50px;
   height: 50px;
   position: fixed;
   z-index: 900;
   top: 5%;
   left: 3%;
+
+  /* transici'on cruz */
+  transition: transform 0.5s 0.5s;
 }
 
+#cbburger:checked ~ .burguer_icon {
+  transform: rotate(45deg);
+}
 /* checkbox */
 
 input[type='checkbox'] {
@@ -199,7 +205,7 @@ input[type='checkbox'] {
 
 /* animación en checked */
 #cbburger:checked + .burguer_icon .line:nth-child(1) {
-  transform: translateY(15px) rotate(45deg);
+  transform: translateY(20px);
   background: var(--color_text);
 }
 #cbburger:checked + .burguer_icon .line:nth-child(2) {
@@ -208,10 +214,11 @@ input[type='checkbox'] {
 }
 
 #cbburger:checked + .burguer_icon .line:nth-child(3) {
-  transform: translateY(-15px) rotate(-45deg);
+  transform: rotate(90deg) translateX(-9px);
   background: var(--color_text);
 }
 
+/* colores de las tiras */
 .menu_dropdown .liUno {
   background-color: var(--color_bcg);
 }
