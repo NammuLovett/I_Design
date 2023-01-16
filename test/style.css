@@ -235,46 +235,52 @@ input[type='checkbox'] {
 }
 
 .menu_dropdown ul li:nth-child(2) {
-  transition: transform linear 1s 1s, background-color ease-in 2s 2s;
+  transition: all 0s;
 }
 .menu_dropdown ul li:nth-child(3) {
-  transition: transform linear 1s 1.5s, background-color ease-in 2s 2.5s;
+  transition: all 0s;
 }
 .menu_dropdown ul li:nth-child(4) {
-  transition: transform linear 1s 2s, background-color ease-in 2s 3s;
+  transition: all 0s;
 }
 .menu_dropdown ul li:nth-child(5) {
-  transition: transform linear 1s 2.5s, background-color ease-in 2s 3.5s;
+  transition: all 0s;
 }
 .menu_dropdown ul li:nth-child(6) {
-  transition: transform linear 1s 3s, background-color ease-in 2s 4s;
+  transition: all 0s;
 }
 .menu_dropdown ul li:nth-child(7) {
-  transition: transform linear 1s 3.5s, background-color ease-in 2s 4.5s;
+  transition: all 0s;
 }
 
 /* hijos del li X checked  */
 .cbburger:checked ~ .menu_dropdown ul li:nth-child(2) {
   background-color: transparent;
   transform: translatex(0);
+  transition: transform linear 1s 1s, background-color ease-in 2s 2s;
 }
 .cbburger:checked ~ .menu_dropdown ul li:nth-child(3) {
   background-color: transparent;
   transform: translatex(0);
+  transition: transform linear 1s 1.5s, background-color ease-in 2s 2.5s;
 }
 .cbburger:checked ~ .menu_dropdown ul li:nth-child(4) {
   background-color: transparent;
   transform: translatex(0);
+  transition: transform linear 1s 2s, background-color ease-in 2s 3s;
 }
 .cbburger:checked ~ .menu_dropdown ul li:nth-child(5) {
   background-color: transparent;
   transform: translatex(0);
+  transition: transform linear 1s 2.5s, background-color ease-in 2s 3.5s;
 }
 .cbburger:checked ~ .menu_dropdown ul li:nth-child(6) {
   background-color: transparent;
   transform: translatex(0);
+  transition: transform linear 1s 3s, background-color ease-in 2s 4s;
 }
 .cbburger:checked ~ .menu_dropdown ul li:nth-child(7) {
   background-color: transparent;
   transform: translatex(0);
+  transition: transform linear 1s 3.5s, background-color ease-in 2s 4.5s;
 }
