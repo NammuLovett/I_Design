@@ -1,7 +1,9 @@
 * {
-  box-sizing: border-box;
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
   scroll-behavior: smooth;
 }
 
@@ -14,16 +16,19 @@
 }
 
 /*contenedor de las barras del menú hamburguesa*/
- {
+.burger_icon {
   display: block;
   cursor: pointer;
+  position: fixed;
+  top: 5%;
+  right: 3%;
 }
 
 body {
   overflow-x: hidden;
 }
 main {
-  background-image: url('./road.jpg');
+  background-image: url('img/road.jpg');
 }
 
 /*barras menú hamburguesa*/
@@ -44,7 +49,7 @@ span {
 }
 
 /*título de la landing page*/
- {
+.titleLanding {
   font-family: 'Lexend Mega', sans-serif;
   font-weight: normal;
   font-size: 4.5vw;
@@ -55,21 +60,21 @@ span {
 }
 
 /*texto del párrafo de la landing page*/
- {
+.textP {
   font-family: 'Habibi', serif;
   font-size: 1.7rem;
   color: var(--herocolor);
 }
 
 /*panel izquierdo*/
- {
+.izquierda {
   width: 40%;
   height: 100%;
   background-color: var(--fondopoema);
 }
 
 /*texto del lateral izquierdo*/
- {
+.izquierdaText {
   font-family: 'Habibi', serif;
   font-weight: normal;
   font-size: 1.3rem;
@@ -78,14 +83,14 @@ span {
 }
 
 /*panel derecho*/
- {
+.derecha {
   width: 60%;
   height: 100%;
-  background-image: url('./background.jpg');
+  background-image: url('img/background.jpg');
 }
 
 /*formato texto  panel derecho*/
- {
+.derechaText {
   text-decoration: none;
   font-family: 'Lexend Mega', sans-serif;
   font-size: 3rem;
