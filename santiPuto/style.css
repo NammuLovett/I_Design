@@ -24,7 +24,8 @@
   right: 3%;
   z-index: 100;
 }
-
+.icono_barras {
+}
 body {
   overflow-x: hidden;
 }
@@ -83,17 +84,20 @@ span {
 
 /*panel izquierdo*/
 .izquierda {
+  top: 0;
   width: 40%;
   height: 100%;
   background-color: var(--fondopoema);
   position: absolute;
-  top: 0;
+  /* transición */
+  transition: all 1s;
+  padding-top: 10%;
 }
 .izquierda_on {
-  right: -100%;
+  left: 0;
 }
 .izquierda_off {
-  right: 0;
+  left: -100%;
 }
 
 /*texto del lateral izquierdo*/
@@ -112,26 +116,46 @@ span {
   height: 100%;
   background-image: url('img/background.jpg');
   position: absolute;
+  text-align: center;
+  padding: 5%;
+  /* transición */
+  transition: all 1s;
 }
 
 .derecha_on {
-  right: 100%;
+  right: 0;
 }
 .derecha_off {
-  right: 0;
+  right: -100%;
 }
 /*formato texto  panel derecho*/
 .derechaText {
   text-decoration: none;
   font-family: 'Lexend Mega', sans-serif;
-  font-size: 3rem;
+  font-size: 2.5rem;
   font-weight: 200;
   text-align: center;
   line-height: 5rem;
   color: var(--textcolor);
 }
+.derechaAnchor a {
+  color: var(--textcolor);
+}
 
-.icono_barras {
+.derechaAnchor li {
+  padding-bottom: 5%;
+}
+.derechaAnchor {
+  font-size: 3rem;
+  font-family: 'Lexend Mega', sans-serif;
+  font-weight: 100;
+  padding-top: 10%;
+}
+.derechaAnchor li :hover {
+  background-color: var(--fondopoema);
+  border-radius: 20px;
+  border: var(--textcolor) solid 2px;
+  padding: 1%;
 }
 
 h2,
