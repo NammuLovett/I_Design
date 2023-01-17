@@ -22,7 +22,7 @@
   </head>
   <body>
     <main>
-      <div class="burger_icon">
+      <div class="burger_icon icono_barras">
         <span class="lineUno"></span>
         <span class="lineDos"></span>
         <span class="LineTres"></span>
@@ -36,7 +36,7 @@
           life when a decision has to be made. Which way will you go?
         </p>
       </div>
-      <div class="izquierda">
+      <div class="izquierda izquierda_off">
         <div class="izquierdaText">
           <p>
             Two roads diverged in a yellow wood,<br />
@@ -65,7 +65,7 @@
           </p>
         </div>
       </div>
-      <div class="derecha">
+      <div class="derecha derecha_off">
         <div class="derechaText">
           <h2>The Road Not Taken</h2>
           <h3>By Robert Frost</h3>
@@ -100,7 +100,7 @@
     </main>
   </body>
   <script>
-    $('.contenedor_icono_burger').on('click', function () {
+    $('.burger_icon').on('click', function () {
       $(this).toggleClass('icono_cruz icono_barras');
 
       $('.derecha').toggleClass('derecha_off derecha_on');

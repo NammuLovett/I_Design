@@ -78,6 +78,8 @@ span {
   text-align: center;
 }
 
+/* hecho */
+
 /*panel izquierdo*/
 .izquierda {
   width: 40%;
@@ -86,8 +88,9 @@ span {
   position: absolute;
   right: -100%;
 }
-
-/* hecho */
+.izquierda_off {
+  right: 0;
+}
 
 /*texto del lateral izquierdo*/
 .izquierdaText {
@@ -107,6 +110,9 @@ span {
   right: 100%;
 }
 
+.derecha_off {
+  right: 0;
+}
 /*formato texto  panel derecho*/
 .derechaText {
   text-decoration: none;
