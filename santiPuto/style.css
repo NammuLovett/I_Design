@@ -22,6 +22,7 @@
   position: fixed;
   top: 5%;
   right: 3%;
+  z-index: 100;
 }
 
 body {
@@ -86,6 +87,9 @@ span {
   height: 100%;
   background-color: var(--fondopoema);
   position: absolute;
+  top: 0;
+}
+.izquierda_on {
   right: -100%;
 }
 .izquierda_off {
@@ -103,13 +107,16 @@ span {
 
 /*panel derecho*/
 .derecha {
+  top: 0;
   width: 60%;
   height: 100%;
   background-image: url('img/background.jpg');
   position: absolute;
-  right: 100%;
 }
 
+.derecha_on {
+  right: 100%;
+}
 .derecha_off {
   right: 0;
 }
@@ -122,6 +129,9 @@ span {
   text-align: center;
   line-height: 5rem;
   color: var(--textcolor);
+}
+
+.icono_barras {
 }
 
 h2,
