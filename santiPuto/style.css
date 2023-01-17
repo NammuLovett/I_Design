@@ -24,8 +24,7 @@
   right: 3%;
   z-index: 100;
 }
-.icono_barras {
-}
+
 body {
   overflow-x: hidden;
 }
@@ -39,15 +38,25 @@ main {
 }
 
 /*barras menú hamburguesa*/
-span {
+.icono_barras span {
   display: block;
   width: 40px;
   height: 5px;
   margin-bottom: 8px;
   background: var(--herocolor);
   border-radius: 3px;
+  transition: all 1s;
 }
-
+/*cruz menú hamburguesa*/
+.icono_cruz span {
+  display: block;
+  width: 40px;
+  height: 5px;
+  margin-bottom: 8px;
+  border-radius: 3px;
+  transition: all 1s;
+  background: var(--textcolor);
+}
 /*panel central landing page*/
 .herotext {
   background-color: var(--fondolanding);
