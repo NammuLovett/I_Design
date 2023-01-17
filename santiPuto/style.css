@@ -57,6 +57,13 @@ main {
   transition: all 1s;
   background: var(--textcolor);
 }
+
+.icono_cruz span :nth-child(1) {
+  /* girar 45º */
+}
+.icono_cruz span :nth-child(3) {
+  /* girar 45º */
+}
 /*panel central landing page*/
 .herotext {
   background-color: var(--fondolanding);
