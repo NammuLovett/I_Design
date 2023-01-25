@@ -50,20 +50,66 @@ main {
 /*cruz menú hamburguesa*/
 .icono_cruz span {
   display: block;
-  width: 40px;
   height: 5px;
+  width: 40px;
   margin-bottom: 8px;
   border-radius: 3px;
   transition: all 1s;
   background: var(--textcolor);
 }
 
-.icono_cruz span :nth-child(1) {
-  /* girar 45º */
+.icono_cruz span:nth-child(1) {
+  display: block;
+  width: 40px;
+  height: 5px;
+  margin-bottom: 8px;
+  background-color: var(--textcolor);
+  border-radius: 3px;
+  transform: translateX(-10px) rotateZ(315deg) translateY(18px);
 }
-.icono_cruz span :nth-child(3) {
-  /* girar 45º */
+.icono_cruz span:nth-child(2) {
+  display: block;
+  width: 40px;
+  height: 5px;
+  margin-bottom: 8px;
+  background: var(--herocolor);
+  border-radius: 3px;
+  transform: translateX(-20px);
+  opacity: 0;
 }
+.icono_cruz span:nth-child(3) {
+  display: block;
+  width: 40px;
+  height: 5px;
+  margin-bottom: 8px;
+  background-color: var(--textcolor);
+  border-radius: 3px;
+  transform: translateX(-10px) rotateZ(-315deg) translateY(-18px);
+}
+
+.burger_icon:before {
+  content: '';
+  display: block;
+  cursor: pointer;
+  position: absolute;
+  right: -11px;
+  top: -12px;
+  border: 3px solid var(--textcolor);
+  background-color: #d1d1d180;
+  border-radius: 50%;
+  z-index: 9;
+  width: 50px;
+  height: 50px;
+  opacity: 0%;
+  transition: all 0.5s;
+}
+.icono_cruz:before {
+  opacity: 100%;
+}
+.icono_cruz {
+  transition: all 1s;
+}
+
 /*panel central landing page*/
 .herotext {
   background-color: var(--fondolanding);
